@@ -1,1 +1,66 @@
+
+
 /* CSS Document */
+.visual {position: relative; width: 100%;}
+.visual .gallery{}
+.visual .gallery ul {}
+.visual .gallery ul li {}
+.visual .gallery ul li img {}
+.visual .gallery .slogan {color: #fff; display: flex; flex-direction: column; position: absolute; top: 31.6%; left: 6.25%; }
+.visual .gallery .slogan strong {font-size: 25px; font-weight: 300; line-height: 2.125rem; letter-spacing: -0.014rem;}
+.visual .gallery .slogan span {font-size: 18px; font-weight: 300;  padding-top: .3875rem;}
+
+.visual .dot {}
+.visual .dot span {}
+
+
+#content {width: 100%;}
+#content .sustain {width: 100%; background-color: #f5f5f5;}
+#content .sustain>p {padding: 40px 0 40px 0; text-align: center; font-size: 1.125rem; font-weight: 500;}
+#content .sustain ul {margin: 0 3.125%; display: flex; justify-content: space-between; }
+#content .sustain ul li {} 
+#content .sustain ul li:nth-child(1),
+#content .sustain ul li:nth-child(2) { margin-right: 3%} 
+#content .sustain ul li img {} 
+#content .sustain ul li h4 {padding-top: 14px; font-size: 16px; font-weight: 500;}
+#content .sustain ul li p {font-size: 10px; padding-top: 5px; padding-bottom: 30px;}
+
+#content .business {}
+#content .business>p {padding: 30px 0 30px 0; text-align: center; font-size: 1.125rem; font-weight: 500;}
+#content .business ul {margin: 0 3.125%; }
+#content .business ul li{width: 100%;} 
+#content .business ul li a {width: 100%; } 
+#content .business ul li a>div{margin-top: 22px; display: flex; flex-direction: row; display: flex; justify-content: space-around;} 
+#content .business ul li a img {border-radius: 30px;} 
+#content .business ul li a h4 {font-size: 16px; font-weight: 500;}
+#content .business ul li a p {font-size: 11px;}
+
+#content .business ul li {display: none;}
+#content .business ul li:nth-child(1) {display: block;}
+
+
+#content .business .busDot {}
+#content .business .busDot span{}
+
+#content h3 {font-size: 20px; font-weight: 500;}
+#content .media {margin-left: 3.125%; margin-top: 50px;}
+#content .media h3 {margin-bottom: 25px;}
+#content .media ul {width: 150%; margin-left: 3.125%; display: flex; flex-direction: row; }
+#content .media ul li{margin-right: 2%; } 
+#content .media ul li a {} 
+#content .media ul li a img {} 
+#content .media ul li a span {display: flex; flex-direction: column; margin-top: 13px; text-align: center;}
+#content .media .processbar {  margin: 20px 3.125%; background: #832932; height: 4px; border-radius: 100px; }
+#content .media .processbar span{ width: 0%; }
+
+#content .media .more {}
+
+#content .faq {margin-left: 3.125%; margin-top: 50px; width: 100%; height: 100%;}
+#content .faq h3 {margin-bottom: 25px;}
+#content .faq ul {display: flex;  flex-direction: column; width: 100%; height: 100%; justify-content: space-between; }
+#content .faq ul li {}
+#content .faq ul li p:nth-child(1) {}
+#content .faq ul li p:nth-child(2) {}
+#content .faq ul li p a {}
+#content .faq .more {}
+
