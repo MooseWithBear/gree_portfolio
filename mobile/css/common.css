@@ -57,25 +57,31 @@ label { cursor:pointer; }
 #wrap{ width:100%; position: relative;  overflow:hidden;}
 
 /* 헤더공통 */
-#headerArea {position: fixed; z-index: 100; width: 100%;}
-#headerArea .headerTop{ display:flex; justify-content: space-between; margin:0 1.5% }
-#headerArea .headerTop h1 a{margin-left: 5%; background: url(../images/logo_320.webp) 0 50% no-repeat; width: 75px; height: 50px; text-indent: -999%; display:block; }
-#headerArea .headerTop .hamberger {display: flex; margin: 4.5% 2.5%;}
-#headerArea .headerTop .hamberger i{color: red; font-size: 1.2rem;}
+#headerArea {position: fixed; z-index: 100; width: 100%; }
+#headerArea.on {background-color: #fff;}
+#headerArea .headerTop{align-items: center;  height: 60px; display:flex; justify-content: space-between; margin-top: 0%; }
+#headerArea .headerTop h1 a{ padding: 20px 20px 20px 20px; background: url(../images/logo_320.webp) 50% 50% no-repeat; width: 75px;  text-indent: -999%; display:block; }
+#headerArea .headerTop .hamberger {display: block; padding: 6% }
+#headerArea .headerTop .hamberger i{color: #fff; font-size: 1.8rem; }
+#headerArea.on .headerTop .hamberger i{color: #1877f2;}
 
+#headerArea .headerTop .hamberger i.close {color: #1877f2; font-size: 2.1rem; }
 /* gnb */
-#gnb {box-sizing: border-box; overflow-y: scroll; z-index: -1; padding: 8% 0; position: fixed; top: 0; background: #fff; width: 100%; height: 100%;}
+
+#gnb {left:100%; top: 0; position: absolute; width: 100%; transition: all 0.2s ease-in-out;}
+
+#gnb.aladin {left:0; opacity: 1; box-sizing: border-box; overflow-y: scroll; z-index: -1; padding: 8% 0; position: fixed; top: 0; background: #fff; width: 100%; height: 100%;}
 #gnb ul.mainMenu { margin: 14.3% 15% 0 15%;}
 
 #gnb ul.mainMenu li.depth1 {padding-top: 5.6%;}
 #gnb ul.mainMenu li.depth1:nth-child(1) {padding-top: 0;}
-#gnb ul.mainMenu li.depth1 ul { padding-left: 11.5%; display: none;}
-#gnb ul.mainMenu li.depth1 ul li {margin-top: 3.4%; font-size: 18px;}
-
+#gnb ul.mainMenu li.depth1 ul { padding-left: 11.5%; padding: 5% 11.4%; display: none; }
+#gnb ul.mainMenu li.depth1 ul li {margin-top: 1%; font-size: 18px;}
+#gnb ul.mainMenu li.depth1 ul li a {padding: 2.3%; display: block;}
 
 #gnb ul.mainMenu li.depth1 h3 {position: relative; width: 100%;}
-#gnb ul.mainMenu li.depth1 h3 a {font-weight: 700; font-size: 23px; display: block; margin-top: 3%;}
-#gnb ul.mainMenu li.depth1 h3 a i{position: absolute; right: 0;}
+#gnb ul.mainMenu li.depth1 h3 a {padding: 1% 0; font-weight: 700; font-size: 23px; display: block; margin-top: 3%;}
+#gnb ul.mainMenu li.depth1 h3 a i{position: absolute; right: 0; top: 16%;}
 
 #gnb ul.memberMenu {margin: 10% 29% 0 29%; display: flex; justify-content: center;}
 #gnb ul.memberMenu li:nth-child(2) {margin-left: 25%;}
@@ -94,7 +100,7 @@ label { cursor:pointer; }
 
 
 #gnb ul.sns li span.snsBox a {color:#fff; width: 44px; height:44px; display: block;}
-#gnb ul.sns li span.snsBox a i {padding-top: 0.01%; display: block; font-size: 27px; line-height: 44px; text-align: center;}
+#gnb ul.sns li span.snsBox a i {padding-top: 0.01%; display: block; font-size: 1.6875rem; line-height: 2.75rem; text-align: center;}
 
 
 
@@ -103,7 +109,7 @@ label { cursor:pointer; }
 
 
 /* 푸터공통 */
-#footerArea {margin-top: 3.75rem; background-color: #e5e5e5; padding: 5.5% 0;}
+#footerArea {margin-top: 3.75rem; background-color: #e5e5e5; padding: 5.5% 0 20px 0;}
 #footerArea .footerInner {margin: 0 3.125%;}
 #footerArea .topMove {}
 #footerArea .logoBox {  display: flex; justify-content: space-between;}
@@ -117,7 +123,7 @@ label { cursor:pointer; }
 #footerArea .info address {font-size: 0.8rem; text-align: justify;}
 #footerArea .info p {margin-top: .9375rem; font-family: 'Lato', sans-serif; font-size: 0.77rem; color: #777;}
 
-#footerArea .family {margin-top: .8125rem;}
+#footerArea .family {margin-top: .6rem;}
 #footerArea .family>a {box-sizing: border-box; font-family: 'Lato', sans-serif; font-weight: 500; letter-spacing: 0.2rem; border: .125rem solid #444; box-sizing: border-box; width: 100%; line-height: 2.1875rem; padding-left: .75rem; height: 40px;  border-radius: 7px; display: block;}
 #footerArea .family a i{}
 #footerArea .family ul { display: none;}
