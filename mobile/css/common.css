@@ -57,11 +57,50 @@ label { cursor:pointer; }
 #wrap{ width:100%; position: relative;  overflow:hidden;}
 
 /* 헤더공통 */
-#headerArea {position: fixed; z-index: 50; width: 100%;}
+#headerArea {position: fixed; z-index: 100; width: 100%;}
 #headerArea .headerTop{ display:flex; justify-content: space-between; margin:0 1.5% }
 #headerArea .headerTop h1 a{margin-left: 5%; background: url(../images/logo_320.webp) 0 50% no-repeat; width: 75px; height: 50px; text-indent: -999%; display:block; }
 #headerArea .headerTop .hamberger {display: flex; margin: 4.5% 2.5%;}
-#headerArea .headerTop .hamberger i{color: #fff; font-size: 1.2rem;}
+#headerArea .headerTop .hamberger i{color: red; font-size: 1.2rem;}
+
+/* gnb */
+#gnb {box-sizing: border-box; overflow-y: scroll; z-index: -1; padding: 8% 0; position: fixed; top: 0; background: #fff; width: 100%; height: 100%;}
+#gnb ul.mainMenu { margin: 14.3% 15% 0 15%;}
+
+#gnb ul.mainMenu li.depth1 {padding-top: 5.6%;}
+#gnb ul.mainMenu li.depth1:nth-child(1) {padding-top: 0;}
+#gnb ul.mainMenu li.depth1 ul { padding-left: 11.5%; display: none;}
+#gnb ul.mainMenu li.depth1 ul li {margin-top: 3.4%; font-size: 18px;}
+
+
+#gnb ul.mainMenu li.depth1 h3 {position: relative; width: 100%;}
+#gnb ul.mainMenu li.depth1 h3 a {font-weight: 700; font-size: 23px; display: block; margin-top: 3%;}
+#gnb ul.mainMenu li.depth1 h3 a i{position: absolute; right: 0;}
+
+#gnb ul.memberMenu {margin: 10% 29% 0 29%; display: flex; justify-content: center;}
+#gnb ul.memberMenu li:nth-child(2) {margin-left: 25%;}
+#gnb ul.memberMenu li a {font-weight: 500; font-size: .9375rem; display: block; padding: 5% 0; }
+
+#gnb ul.sns {margin: 4% 15%; display: flex; justify-content:center;}
+#gnb ul.sns li { margin-left: 3%;}
+#gnb ul.sns li:nth-child(1) { margin-left: 0%;}
+
+
+#gnb ul.sns li span.snsBox {display: block;   border-radius: 20%;  float: left;}
+#gnb ul.sns li span.snsBox.facebook {background: #1877f2;}
+#gnb ul.sns li span.snsBox.twitter {background: #55acee;}
+#gnb ul.sns li span.snsBox.instagram {background: #c32a9e;}
+#gnb ul.sns li span.snsBox.youtube {background: #bb0000;}
+
+
+#gnb ul.sns li span.snsBox a {color:#fff; width: 44px; height:44px; display: block;}
+#gnb ul.sns li span.snsBox a i {padding-top: 0.01%; display: block; font-size: 27px; line-height: 44px; text-align: center;}
+
+
+
+
+
+
 
 /* 푸터공통 */
 #footerArea {margin-top: 3.75rem; background-color: #e5e5e5; padding: 5.5% 0;}
