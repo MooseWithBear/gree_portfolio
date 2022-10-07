@@ -124,15 +124,15 @@ label { cursor:pointer; }
 #footerArea .info p {margin-top: .9375rem; font-family: 'Lato', sans-serif; font-size: 0.77rem; color: #777;}
 
 #footerArea .family {margin-top: .6rem; position: relative;}
-#footerArea .family>a {box-sizing: border-box; font-family: 'Lato', sans-serif; font-weight: 500; letter-spacing: 0.2rem; border: .125rem solid #444; box-sizing: border-box; width: 100%; line-height: 2.1875rem; padding-left: .75rem; height: 40px;  border-radius: 7px; display: block;}
-#footerArea .family a i{}
+#footerArea .family>a {box-sizing: border-box; font-family: 'Lato', sans-serif; font-weight: 500; letter-spacing: 0.2rem; border: 3px solid #444; box-sizing: border-box; width: 100%; line-height: 2.1875rem; padding-left: .75rem; height: 40px;  border-radius: 7px; display: block;}
+#footerArea .family a i{position: absolute; right: 2%; line-height: 2.1875rem;}
 #footerArea .family .familyListBox {display: none; position: absolute; bottom: 40px; width: 100%; background-color: #fff; z-index: 10;}
 #footerArea .family .familyListBox ul {display: flex; flex-direction: column-reverse; align-items: center; }
 #footerArea .family .familyListBox ul li {width: 100%;}
 #footerArea .family .familyListBox ul li a {box-sizing: border-box; padding: 3% 3%; width: 100%;  display: block; }
 
 
-#footerArea.on .family>a {border-radius: 0 0 10px 10px; border: 3px solid #1877f2; border-top: none; color: #fff; background: #1877f2; }
+#footerArea.on .family>a {border-radius: 0 0 10px 10px; border: 3px solid #1877f2;  color: #fff; background: #1877f2; }
 #footerArea.on .family .familyListBox {box-sizing: border-box; display: block; border: 3px solid #1877f2; border-bottom: none; border-radius: 10px 10px 0 0;}
 
 

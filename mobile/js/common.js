@@ -58,10 +58,13 @@ $(document).ready(function() {
         if(open==false) {
             $('.familyListBox').slideDown('fast'); //열어줌
             $('#footerArea').addClass('on');
+            $(this).find('i').addClass('fa-chevron-down').removeClass('fa-chevron-up')
             open = true;
         } else {
-            $('.familyListBox').slideUp('fast').removeClass('on') //닫아줌
+            $('.familyListBox').slideUp('fast'); //닫아줌
             $('#footerArea').removeClass('on');
+            $('.family i').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+            $(this).find('i').addClass('fa-chevron-up').removeClass('fa-chevron-down');
             open = false;
         }
     })
