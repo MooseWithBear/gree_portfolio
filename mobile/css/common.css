@@ -60,7 +60,7 @@ label { cursor:pointer; }
 #headerArea {position: fixed; z-index: 100; width: 100%; }
 #headerArea.on {background-color: #fff;}
 #headerArea .headerTop{align-items: center;  height: 60px; display:flex; justify-content: space-between; margin-top: 0%; }
-#headerArea .headerTop h1 a{ padding: 20px 20px 20px 20px; background: url(../images/logo_320.webp) 50% 50% no-repeat; width: 75px;  text-indent: -999%; display:block; }
+#headerArea .headerTop h1 a{ padding: 20px 20px 20px 20px; background: url(../images/logo_640.webp) 50% 50% no-repeat; background-size: 75px;  width: 75px;  text-indent: -999%; display:block; }
 #headerArea .headerTop .hamberger {display: block; padding: 6% }
 #headerArea .headerTop .hamberger i{color: #fff; font-size: 1.8rem; }
 #headerArea.on .headerTop .hamberger i{color: #1877f2;}
@@ -113,7 +113,7 @@ label { cursor:pointer; }
 #footerArea .footerInner {margin: 0 3.125%;}
 #footerArea .topMove {}
 #footerArea .logoBox {  display: flex; justify-content: space-between;}
-#footerArea .logoBox .footerLogo {background: url(../images/logo_320.webp) 0 0 no-repeat; width: 75px; height: 30px; text-indent: -999%;}
+#footerArea .logoBox .footerLogo {background: url(../images/logo_640.webp) 0 0 no-repeat; background-size: 75px; width: 75px; height: 30px; text-indent: -999%;}
 #footerArea .logoBox span {line-height: 0.9rem; font-size: 1rem; font-weight: 500;}
 #footerArea .use {color: #333; font-size: 0.9rem;  display: flex; justify-content: space-between; margin-top: 1.125rem;}
 #footerArea .use li {}
@@ -123,15 +123,17 @@ label { cursor:pointer; }
 #footerArea .info address {font-size: 0.8rem; text-align: justify;}
 #footerArea .info p {margin-top: .9375rem; font-family: 'Lato', sans-serif; font-size: 0.77rem; color: #777;}
 
-#footerArea .family {margin-top: .6rem;}
+#footerArea .family {margin-top: .6rem; position: relative;}
 #footerArea .family>a {box-sizing: border-box; font-family: 'Lato', sans-serif; font-weight: 500; letter-spacing: 0.2rem; border: .125rem solid #444; box-sizing: border-box; width: 100%; line-height: 2.1875rem; padding-left: .75rem; height: 40px;  border-radius: 7px; display: block;}
 #footerArea .family a i{}
-#footerArea .family ul { display: none;}
-#footerArea .family ul li {}
-#footerArea .family ul li a {}
+#footerArea .family .familyListBox {display: none; position: absolute; bottom: 40px; width: 100%; background-color: #fff; z-index: 10;}
+#footerArea .family .familyListBox ul {display: flex; flex-direction: column-reverse; align-items: center; }
+#footerArea .family .familyListBox ul li {width: 100%;}
+#footerArea .family .familyListBox ul li a {box-sizing: border-box; padding: 3% 3%; width: 100%;  display: block; }
 
 
-
+#footerArea.on .family>a {border-radius: 0 0 10px 10px; border: 3px solid #1877f2; border-top: none; color: #fff; background: #1877f2; }
+#footerArea.on .family .familyListBox {box-sizing: border-box; display: block; border: 3px solid #1877f2; border-bottom: none; border-radius: 10px 10px 0 0;}
 
 
 
