@@ -1,5 +1,5 @@
 # gree_portfolio
-포트폴리오입니다.
+포트폴리오
 
 <h6>모바일버전 QR CODE </h6>
 
