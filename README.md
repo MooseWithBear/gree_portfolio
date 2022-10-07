@@ -5,8 +5,8 @@
 
 
 <div>
-    <img style="width:120px; height:120px" src="https://user-images.githubusercontent.com/107022571/193955681-fab82f41-39f1-4b53-aab7-4c38b034adc2.png" alt="">
+    <img style="width:120px; float:left; height:120px" src="https://user-images.githubusercontent.com/107022571/193955681-fab82f41-39f1-4b53-aab7-4c38b034adc2.png" alt="">
+    ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=MooseWithBear&show_icons=true&theme=radical)
 </div>
 
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=MooseWithBear&show_icons=true&theme=radical)
