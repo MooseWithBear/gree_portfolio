@@ -62,10 +62,10 @@
 #content .faq ul li { padding: 2.3% 0; border-top: .0625rem solid #ddd;}
 #content .faq ul li:last-child{border-bottom:.0625rem solid #ddd;}
 #content .faq ul li p{letter-spacing:-0.045rem; text-align:justify; font-size: 0.9rem;}
-#content .faq ul li p a{position:relative; display:block; padding:1rem 0 1rem 2.85rem; background:url("../images/navi_open.png") 98% 50% no-repeat; background-size:16px auto;}
-#content .faq ul li.on p a{background-image:url("../images/navi_close.png");}
+#content .faq ul li p a{position:relative; display:block; padding:1rem 0 1rem 2.85rem; }
+#content .faq ul li p a i {position: absolute; right: 0.5%; font-size: 1.375rem;}
 #content .faq ul li p a::before{content:'Q'; position:absolute; left:0.7142rem; top:.6rem; color:#1179f2; font-size:1.3751rem; font-weight:700;}
-#content .faq ul li p:nth-child(2)::before{content:'A'; position:absolute; left:0.7142rem; top:.6rem; color:#999; font-size:1.3751rem; font-weight:700;}
+#content .faq ul li p:nth-child(2)::before{content:'A'; position:absolute; left:0.93rem; ; color:#999; font-size:1.3751rem; font-weight:700;}
 #content .faq ul li p:nth-child(2){position:relative; padding:1rem 1rem 1rem 2.85rem; background:#f8f8f8; border-top:.0625rem dotted #eee; display: none;}
 
 
