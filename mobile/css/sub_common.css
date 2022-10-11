@@ -28,7 +28,7 @@
 
     #content{width: 100%;   }
     #content .titleArea{width: 100%; position: relative;}
-    #content .titleArea .lineMap{position: absolute; right: 1vw; top: 1vh; color: #999;} 
+    #content .titleArea .lineMap{position: absolute; right: 2%; top: 1vh; color: #999;} 
     #content .titleArea .lineMap span:nth-child(3){color: #666;} 
     
     #content .titleArea h2{letter-spacing: 0.05em; position: relative; font-size: 30px; font-weight: 700; text-align: center; padding: 3vh 0; font-family: 'Titillium Web', sans-serif;}
