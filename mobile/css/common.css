@@ -123,7 +123,7 @@ label { cursor:pointer; }
 #footerArea .info address {font-size: 0.8rem; text-align: justify;}
 #footerArea .info p {margin-top: .9375rem; font-family: 'Lato', sans-serif; font-size: 0.77rem; color: #777;}
 
-#footerArea .family {margin-top: .6rem; position: relative;}
+#footerArea .family {margin-top: .6rem; position: relative; z-index: 60;}
 #footerArea .family>a {box-sizing: border-box; font-family: 'Lato', sans-serif; font-weight: 500; letter-spacing: 0.2rem; border: 2px solid #999; box-sizing: border-box; width: 100%; line-height: 2.1875rem; padding-left: .75rem; height: 40px;  border-radius: 7px; display: block;}
 #footerArea .family a i{position: absolute; right: 2%; line-height: 2.1875rem;}
 #footerArea .family .familyListBox {display: none; position: absolute; bottom: 40px; width: 100%; background-color: #fff; z-index: 10;}
