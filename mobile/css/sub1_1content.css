@@ -1,0 +1,53 @@
+#content span{}
+#content .vision span, #content .strategy span{font-size: 15px;}
+#content p{font-size: 20px; line-height: 60px; text-align: center;}
+#content strong{font-size: 20px; line-height: 70px; letter-spacing: 0.3em; font-weight: 300;}
+
+#content .mission .missionInner .missionBox{ width: 100%;position: relative; }
+#content .mission .missionInner .missionBox .missionLeft{width: 60%; ;height: 100%; float: left; position: absolute; left: 0;; bottom: 0; }
+#content .mission .missionInner .missionBox .missionLeft h3{margin: 0; line-height: 0; position: absolute; top: 50%; left: 45%; text-align: center;}
+
+#content .mission .missionInner .missionBox .missionRight{width: 40%; height: 100%;  background: #043955;opacity: .5; position: absolute; right: 0; bottom: 0;}
+#content .mission .missionInner .missionBox .missionRight>div{width: 54.1%; height: 60%;
+                                                            position: absolute; border: 1px solid #fff; 
+                                                             top: 20%;right: 22.5%;}
+#content .missionTextbox{color: #fff; width: 200px; height: 225px; padding-left: 50px; padding-top: 50px;}
+#content .longspacing{letter-spacing: 0.9em;}
+#content .spacing02{letter-spacing: 0.11em;font-size: 1em; }
+#content .upline::before{content: '';width: 55px; height: 2px; background: #000; 
+                        position: absolute; top: -100px;left: 550px;}
+#content .upline{position: relative;}
+
+
+
+
+
+#content .vision{margin-top: 200px; margin-bottom: 300px;}
+#content .vision h3{margin-top: 120px;}
+#content .vision>div{position: relative;  width: 100%; min-height: 740px;  background:url(../images/sub1_vision.jpg) 0 0 no-repeat}
+#content .vision .visionInner{width: 60%; background: #999; margin: 0 auto; position: absolute; left: 20%; top: 25%;}
+#content .vision .visionInner>div{color: #fff; width: 100%;
+    height: 390px;
+    top: 175px;
+    border: 1px solid #fff;}
+#content .vision span{text-align: center; display: block; line-height: 5px;}
+
+
+
+
+
+#content .strategy{position: relative; height: 1200px;}
+#content .strategy h3{text-shadow: none;}
+#content .strategy .strategyInner{height: 100%;}
+#content .strategy .strategyInner>div{width: 0;}
+#content .strategy .strategyInner ul{margin-top: 40px; z-index: 2; position: absolute; top: 450px; }
+#content .strategy .strategyInner ul li{border-radius: 20px; height: 325px; width: 282px; margin: 12px 12px; float: left;}
+
+#content .strategy .strategyInner ul li:nth-child(1){margin-left: 0; background: url(../images/sub1_strategy_01.jpg) 0 0 no-repeat;}
+#content .strategy .strategyInner ul li:nth-child(2){background: url(../images/sub1_strategy_02.jpg) 0 0 no-repeat;}
+#content .strategy .strategyInner ul li:nth-child(3){background: url(../images/sub1_strategy_03.jpg) 0 0 no-repeat;}
+#content .strategy .strategyInner ul li:nth-child(4){margin-right: 0; background: url(../images/sub1_strategy_04.jpg) 0 0 no-repeat;}
+
+#content .strategy .strategyInner ul li span{color: #fff; margin-top: 280px; display: block; text-align: center;}
+
+#content .strategy .strategyBackground{background: url(../images/sub1_strategybg.jpg); position: relative; margin-bottom: 0; width: 2000px; height: 1137px; left: -400px; top: -200px; z-index:0;}
