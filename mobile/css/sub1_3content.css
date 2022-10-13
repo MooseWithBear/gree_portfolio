@@ -12,7 +12,7 @@
 #content .network{}
 #content .network .networkInner{}
 #content .network .networkInner .networkTab{width: 100%; margin-bottom: 5%; }
-#content .network .networkInner .networkTab ul{padding-top: 10px; overflow: hidden;}
+#content .network .networkInner .networkTab ul{margin: 0 3.125%;  padding-top: 10px; overflow: hidden;}
 
 
 #content .network .map{margin: 0 3.125%;}
