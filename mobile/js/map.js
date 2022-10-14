@@ -125,16 +125,16 @@
 
 
 // //    var cnt=$('.map h3').size();
-//    // console.log(cnt);
-   $('.networkTab a').each(function (index) {
-       $(this).click(function(e) {
-           e.preventDefault();
-           $('.contentTab li').removeClass('current');
-           $('.contentTab li:eq('+index+')').addClass('current');
-           $('.map .mapList').fadeOut('fast'); //모든 탭내용을 안보이게...
-           $('.map .mapList:eq('+index+')').fadeIn('slow'); //클릭한 해당 탭내용만 보여라
-        })
-    })
+// //    // console.log(cnt);
+//    $('.networkTab a').each(function (index) {
+//        $(this).click(function(e) {
+//            e.preventDefault();
+//            $('.contentTab li').removeClass('current');
+//            $('.contentTab li:eq('+index+')').addClass('current');
+//            $('.map .mapList').fadeOut('fast'); //모든 탭내용을 안보이게...
+//            $('.map .mapList:eq('+index+')').fadeIn('slow'); //클릭한 해당 탭내용만 보여라
+//         })
+//     })
 
 
  

@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    $('.contentTab li:eq(0)').addClass('current');
+
+
 
 //^ nav 영역 //
 
@@ -102,6 +105,24 @@ $('.topMove a').click(function(e){
 
 
 
+// !sub 공통영역
+$('.contentBox .content:eq(0)').fadeIn('fast');
+$('.contentTab li:eq(0)').addClass('current');
+
+// var cnt=$('.contentBox div').size();
+// console.log(cnt);
+
+var index = 0;
+$('.contentTab a').each(function (index) {
+    $(this).click(function(e) {
+        e.preventDefault();
+        // console.log(index)
+
+        $('.contentTab li').removeClass('current')
+        $('.contentTab li:eq('+index+')').addClass('current');
+        $('.contentBox .content').fadeOut('fast');//모든 탭내용을 안보이게...
+        $('.contentBox .content:eq('+index+')').fadeIn('slow'); //클릭한 해당 탭내용만 보여라
+     }) })
 
 
 
