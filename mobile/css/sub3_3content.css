@@ -1,13 +1,24 @@
+#content{}
+#content h3{text-shadow: none;}
+#content img{width: 100%; border-radius: 15px;  }
+#content p{line-height: 30px; font-size: 16px; text-align: justify;}
+#content dt { font-size: 20px; font-weight: 400; text-align: center; letter-spacing: -0.03rem; padding: 1rem 0 1rem; }
+#content dd {font-size: 14px;line-height: 30px;margin: 1%; text-align: justify; padding: 0 3%; padding-bottom: 1rem;}
+section {margin: 0 3.125%;}
 
 
 
 #content{}
 #content .overview{}
 
-#content .overview ul{ }
-#content .overview ul li{}
-
+#content .overview ul{display: flex;justify-content: space-around; }
+#content .overview ul li{width: 49%; position: relative;}
+#content .overview ul li a {padding: 8%; display: block; font-size: 25px; color: #fff; position: absolute; top: 0%; right: 0%}
+#content .overview ul li i {top: -0.625rem; right: -0.625rem; position: relative; opacity: 0.7;  display: block;}
+#content .overview ul dd{display: none;}
 #content .overview ul li img{}
+#content .hydroMsgbox{margin: 0 3% 6% 3%;}
+
 
 #content .overview ul li:nth-child(1){}
 #content .overview ul li:nth-child(2){}
