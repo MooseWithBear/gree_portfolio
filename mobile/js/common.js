@@ -23,12 +23,14 @@ $(document).ready(function() {
     var op = false;  //네비가 열려있으면(true) , 닫혀있으면(false)
     $(".hamberger").click(function(e) { //메뉴버튼 클릭시
         e.preventDefault();
-        var documentHeight =  $(document).height();
-        $("#gnb").css('height',documentHeight); 
+        
+        // var documentHeight =  $(document).height();
+        // $("#gnb").css('height',documentHeight); 
         if(op==false){
         $("#gnb").removeClass('hide').addClass('aladin');
         $('body').css({overflow:"hidden"});
         $(".hamberger i").addClass('fa-solid fa-xmark').addClass('close');
+        $('.headerTop').css('position','relative').css('z-index', '81')
         op=true;
         }else {
             $("#gnb").removeClass('aladin');

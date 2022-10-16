@@ -72,7 +72,7 @@ label { cursor:pointer; }
 
 #gnb {left:100%; top: 0; position: absolute; width: 100%; transition: all 0.2s ease-in-out;}
 
-#gnb.aladin {left:0; opacity: 1; box-sizing: border-box; overflow-y: scroll; z-index: -1; padding: 8% 0; position: fixed; top: 0; background: #fff; width: 100%; height: 100%;}
+#gnb.aladin {left:0; opacity: 1; box-sizing: border-box; overflow-y: scroll; z-index: 80; padding: 8% 0; position: fixed; top: 0; background: #fff; width: 100%; height: 100%;}
 #gnb ul.mainMenu { margin: 14.3% 15% 0 15%;}
 
 #gnb ul.mainMenu li.depth1 {padding-top: 5.6%;}
