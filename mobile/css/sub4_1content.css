@@ -1,0 +1,3 @@
+.subNav ul li{width: 50%;}
+.conBox a {display: flex; justify-content: center;}
+.conBox i {font-size: 60px; position: absolute; align-self: center; color: #bb0000; }
