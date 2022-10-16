@@ -27,11 +27,13 @@ $(document).ready(function() {
         $("#gnb").css('height',documentHeight); 
         if(op==false){
         $("#gnb").removeClass('hide').addClass('aladin');
+        $('body').css({overflow:"hidden"});
         $(".hamberger i").addClass('fa-solid fa-xmark').addClass('close');
         op=true;
         }else {
             $("#gnb").removeClass('aladin');
             $(".hamberger i").removeClass('fa-solid fa-xmark').addClass('fa-solid fa-bars').removeClass('close');
+            $('body').css({overflow:"auto"});
             op=false;
         }
     })

@@ -29,7 +29,7 @@ $(document).ready(function () {
 $('.overview li').each(function (index){
     $(this).find("a").click(function (e){
       e.preventDefault();
-    console.log(index)
+    // console.log(index)
     })
 })
 // $(".contentArea dl").each(function (index) {
@@ -105,4 +105,81 @@ function touch_end(event) {
     console.log('stop')
   }
 }
+
+
+
+
+
+// !팝업js
+
+
+
+var xhr = new XMLHttpRequest();                 // XMLHttpRequest 객체를 생성한다.
+var responseObject;
+
+xhr.onload = function() {                       // When readystate changes
+ 
+    responseObject = JSON.parse(xhr.responseText);  //서버로 부터 전달된 json 데이터를 responseText 속성을 통해 가져올 수 있다.
+	                                                 // parse() 메소드를 호출하여 자바스크립트 객체로 변환한다.
+};
+
+xhr.open('GET', 'js/sub3.json', true);        // 요청을 준비한다.
+xhr.send(null);                                 // 요청을 전송한다
+
+
+
+// $(document).ready(function(){
+  var arr = ["eco", "green"];
+  jsonType = " ";
+
+   var newContent='';
+  $('.more').click(function(e){
+      e.preventDefault();
+      $("html, body").css({"overflow":"hidden"}); // body scroll 비활성화
+
+
+      var ind = $(this).index('.more');
+
+      newContent='';
+    if($(this).hasClass('more2')) {
+      newContent+='<img src="'+ responseObject.green[ind].image +'" ' + 'alt="">';
+      newContent+='<dl>'
+      newContent+='<dt>' + responseObject.green[ind].title + '</dt>'
+      newContent+='<dd>' + responseObject.green[ind].desc + '</dd>'
+      newContent+='</dl>'
+
+    }else {
+      newContent+='<img src="'+ responseObject.eco[ind].image +'" ' + 'alt="">';
+      newContent+='<dl>'
+      newContent+='<dt>' + responseObject.eco[ind].title + '</dt>'
+      newContent+='<dd>' + responseObject.eco[ind].desc + '</dd>'
+      newContent+='</dl>'
+    }
+
+      newContent+='<a class="popClose" href="#"><i class="fa-regular fa-solid fa-xmark"></i></a>'
+      $('.subPop').html(newContent);
+      $("html, body").css({"overflow":"hidden"}); // body scroll 비활성화
+
+      $('.subPop').fadeIn('fast');
+      $('.subPop').scrollTop(0);
+
+      //console.log(responseObject); 
+
+      $('.subPop .popClose').click(function(e){
+        e.preventDefault();
+        $('.subPop').fadeOut('fast');
+        $("html, body").css({"overflow":""}); // body scroll 활성화
+  
+  });
+
+ 
+
+
+
+  });
+// });
+
+
+
 })
+
