@@ -72,4 +72,5 @@ section {margin: 0 3.125%;}
 .subPop::before{content:'자세히보기'; font-size: 1rem; position:fixed; left:0; top: 0; width: 100%; height: 50px; line-height: 50px; font-weight:700; background:#fff; box-shadow:0 2px 5px rgba(0,0,0,0.15); text-align:center; letter-spacing:-0.065rem;}
 .subPop a {display: block; position: absolute; top: 0; right: 0; padding: 3% 4%; font-size: 20px;}
 .subPop a i {position: relative; display: block; }
+#content .subPop img {display: block; width: 93.75%;  margin: auto; margin-top: 70px; overflow: hidden;} 
 
