@@ -10,8 +10,8 @@ section {margin: 0 3.125%;}
 
 .conBox .videoPop {display: none; }
 .conBox .videoPop .iframeBox {width: 93.75%; margin: 0 3.125%;height: 25rem; position: relative; margin-top: 4.375rem; }
-.conBox .videoPop .popClose i {color: #000; font-size: 1.3rem;}
-.videoPop{background-color: #fff; position:fixed; left:0; top: 0; width: 100%; height: 100%; overflow-y:scroll;z-index: 200; }
+.conBox .videoPop .popClose i {color: #000; font-size: 1.3rem; position: absolute; top: .9375rem; right: .9375rem;}
+.videoPop{background-color: #fff; position:fixed; left:0; top: 0; width: 100%; height: 100%; overflow-y:scroll;z-index: 300; }
 .videoPop::before{content:'유튜브 영상'; font-size: 1rem; position:fixed; left:0; top: 0; width: 100%; height: 3.125rem; line-height: 3.125rem; font-weight:700; background:#fff; box-shadow:0 2px 5px rgba(0,0,0,0.15); text-align:center; letter-spacing:-0.065rem;}
 .videoPop a {display: block; position: absolute; top: 0; right: 0; padding: 3% 4%; font-size: 1.25rem;}
 .videoPop a i {position: relative; display: block; }

@@ -47,7 +47,7 @@ $('.conBox ul li').each(function (index){
           $("html, body").css({"overflow":"hidden"}); // body scroll 비활성화
     
           $('.videoPop').fadeIn('fast').find('dd').fadeIn('fast');
-          $('.videoPop').scrollTop(0);
+          $('.videoPop').scrollTop(0).css('display', 'block');
     
           //console.log(responseObject); 
         
