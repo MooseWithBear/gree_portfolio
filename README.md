@@ -1,12 +1,14 @@
 # gree_portfolio
 
 
-<h6>모바일버전 QR CODE </h6>
 
 
 <div>
+<h6>모바일버전 QR CODE </h6>
+
     <img style="width:120px; height:120px" src="https://user-images.githubusercontent.com/107022571/193955681-fab82f41-39f1-4b53-aab7-4c38b034adc2.png" alt=""/>
 </div>
+
 
 
 
