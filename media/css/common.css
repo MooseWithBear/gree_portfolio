@@ -1,7 +1,20 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=VT323&display=swap');
+
+/* 
+font-family: 'Press Start 2P', cursive;
+font-family: 'Silkscreen', cursive;
+font-family: 'VT323', monospace;
+*/
+
+
 /* Reset CSS  */
+
 * { margin:0; padding:0; border:0; outline:0; vertical-align:top;
 -webkit-text-size-adjust:none;  }
-body {font-family:'돋움', Dotum; font-size:14px; color:#333;}
+html {background-color: #000; font-family:'Press Start 2P', cursive;  font-size:14px; color:#fff; letter-spacing: 0.1rem;}
+
+body {font-family:'Press Start 2P', cursive;  font-size:14px; letter-spacing: 0.1rem;}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
 ul, ol, dl { list-style:none; }
 img, video {border:0; vertical-align:top; }
@@ -17,25 +30,34 @@ p,li,dd{ line-height:1.5em}
 .hidden, #skipNav{display: block; position: absolute; left:-1000%; top:0; width: 1px; height: 1px;
     overflow: hidden; color: #fff;}
 
+
 /* 헤더 공통 영역 */
 #wrap{width:100%; overflow: hidden}
 #headerArea{position:fixed; z-index: 30; height: 80px;
     background: rgba(0,0,0,.8); left:0; top: 0;
-    width: 100%}	
-#headerArea	.headerInner{width: 90%; margin: 0 5%;
-     overflow: hidden}
+    width: 100%;}	
+#headerArea	.headerInner{margin:0 3.125%; overflow: hidden;}
 #headerArea h1{ float: left; margin-top: 15px}
-#headerArea h1 a{color: #fff; text-decoration: none}	
-#headerArea #gnb{float: right;margin-top: 25px}
-#headerArea #gnb ul{overflow: hidden}
-#headerArea #gnb ul li{float: left; margin-right: 15px;}
-#headerArea #gnb ul li a{color: #fff; text-decoration: none}
+#headerArea h1 a{color: #fff; text-decoration: none; display:block; width: 125px; height: 65px; background:url(../images/logo.png) 0 50% no-repeat; background-size:100% auto; text-indent:-9999%; font-size: 0; overflow: hidden; transition:all .3s;}	
+#headerArea #gnb{float: right;margin-top: 25px; width: 700px;}
+#headerArea #gnb ul{overflow: hidden; display: flex; justify-content: space-between;  }
+#headerArea #gnb ul li{ }
+#headerArea #gnb ul li.last {margin: 0;}
+#headerArea #gnb ul li a{color: #fff; text-decoration: none; font-size: 20px;}
 
 
 /* 푸터 공통 영역 */
+#footerArea {padding: 80px;}
+#footerArea>div {height: 150px; text-align: center; display: flex;flex-direction: column; justify-content: space-between;  align-items: center;}
+#footerArea p:nth-of-type(1) {font-size: 25px;}
+#footerArea p:nth-of-type(2) {align-items: flex-start;}
+
+#footerArea p:nth-of-type(3) {font-size: 12px;}
+
+
 
 /* 와이드 pc */
-
+h3{font-size: 25px; line-height: 40px;}
 
 
 /* 일반 pc */
