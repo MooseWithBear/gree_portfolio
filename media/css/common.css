@@ -33,17 +33,17 @@ p,li,dd{ line-height:1.5em}
 
 /* 헤더 공통 영역 */
 #wrap{width:100%; overflow: hidden}
-#headerArea{position:fixed; z-index: 30; height: 80px;
+#headerArea{position:fixed; display: flex; flex-direction: row; justify-content: space-between; z-index: 30; height: 80px;
     background: rgba(0,0,0,.8); left:0; top: 0;
     width: 100%;}	
-#headerArea	.headerInner{margin:0 3.125%; overflow: hidden;}
-#headerArea h1{ float: left; margin-top: 15px}
-#headerArea h1 a{color: #fff; text-decoration: none; display:block; width: 125px; height: 65px; background:url(../images/logo.png) 0 50% no-repeat; background-size:100% auto; text-indent:-9999%; font-size: 0; overflow: hidden; transition:all .3s;}	
-#headerArea #gnb{float: right;margin-top: 25px; width: 700px;}
-#headerArea #gnb ul{overflow: hidden; display: flex; justify-content: space-between;  }
+#headerArea	.headerInner{margin:0 3.125vw; box-sizing: border-box; width: 100vw; display: flex; overflow: hidden;}
+#headerArea h1{  margin-top: 15px; width: 50vw;}
+#headerArea h1 a{min-width: 100px; color: #fff; text-decoration: none; display:block; width: 7.8125vw; height: 65px; background:url(../images/logo.png) 0 50% no-repeat; background-size:100% auto; text-indent:-9999%; font-size: 0; overflow: hidden; }	
+#headerArea #gnb{ width: 50vw;}
+#headerArea #gnb ul{height: 100%;  overflow: hidden; display: flex; justify-content: space-between; align-items: center;  }
 #headerArea #gnb ul li{ }
 #headerArea #gnb ul li.last {margin: 0;}
-#headerArea #gnb ul li a{color: #fff; text-decoration: none; font-size: 20px;}
+#headerArea #gnb ul li a{color: #fff; text-decoration: none; font-size: 1.25vw;}
 
 
 /* 푸터 공통 영역 */
@@ -57,7 +57,6 @@ p,li,dd{ line-height:1.5em}
 
 
 /* 와이드 pc */
-h3{font-size: 25px; line-height: 40px;}
 
 
 /* 일반 pc */
