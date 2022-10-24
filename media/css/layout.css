@@ -113,30 +113,38 @@
 
 #content .gallery .gall_01 {
    display: grid; 
-   gap: 15px;
-   grid-auto-rows: 360px;
-   grid-template-columns: repeat(4, 1fr);
+   gap: 1vw;
+   grid-auto-rows: 18vw;
+   grid-template-columns: repeat(5, 1fr);
    grid-template-areas: 
-   "a a b c"
-   "a a d e"
-   "f g h e"
+   "a a b c c"
+   "a a e f d"
+   "g h h h i"
+   "j h h h i"
    ;}
 
 
-   #content .gallery .gall_01 li {background-color: aquamarine;}
-   #content .gallery .gall_01 li:nth-child(1) {grid-area: a;}
-   #content .gallery .gall_01 li:nth-child(2) {grid-area: b;}
-   #content .gallery .gall_01 li:nth-child(3) {grid-area: c;}
-   #content .gallery .gall_01 li:nth-child(4) {grid-area: d;}
-   #content .gallery .gall_01 li:nth-child(5) {grid-area: e;}
-   #content .gallery .gall_01 li:nth-child(6) {grid-area: f;}
-   #content .gallery .gall_01 li:nth-child(7) {grid-area: g;}
-   #content .gallery .gall_01 li:nth-child(8) {grid-area: h;}
-   #content .gallery .gall_01 li:nth-child(9) {grid-area: i;}
-   
+   #content .gallery .gall_01 li {background-color: aquamarine; }
+   #content .gallery .gall_01 li:nth-child(1) {grid-area: a; background: url(../images/gall_01.webp)50% 50% no-repeat; background-size: cover;}
+   #content .gallery .gall_01 li:nth-child(2) {grid-area: b;background: url(../images/gall_02.webp)50% 50% no-repeat; background-size: cover;}
+   #content .gallery .gall_01 li:nth-child(3) {grid-area: c;background: url(../images/gall_03.webp)50% 50% no-repeat; background-size: cover;}
+   #content .gallery .gall_01 li:nth-child(4) {grid-area: d;background: url(../images/gall_04.webp)50% 50% no-repeat; background-size: cover;}
+   #content .gallery .gall_01 li:nth-child(5) {grid-area: e;background: url(../images/gall_05.webp)50% 50% no-repeat; background-size: cover;}
+   #content .gallery .gall_01 li:nth-child(6) {grid-area: f;background: url(../images/gall_06.webp)50% 50% no-repeat; background-size: cover;}
+   #content .gallery .gall_01 li:nth-child(7) {grid-area: g;background: url(../images/gall_07.webp)50% 50% no-repeat; background-size: cover;}
+   #content .gallery .gall_01 li:nth-child(8) {grid-area: h;background: url(../images/gall_08.webp)50% 50% no-repeat; background-size: cover;}
+   #content .gallery .gall_01 li:nth-child(9) {grid-area: i;background: url(../images/gall_09.webp)50% 50% no-repeat; background-size: cover;}
+   #content .gallery .gall_01 li:nth-child(10) {grid-area: j;background: url(../images/gall_10.webp)50% 50% no-repeat; background-size: cover;}
+   #content .gallery .gall_01 li:nth-child(11) {grid-area: k;background: url(../images/gall_11.webp)50% 50% no-repeat; background-size: cover;}
+   #content .gallery .gall_01 li:nth-child(12) {grid-area: l;background: url(../images/gall_12.webp)50% 50% no-repeat; background-size: cover;}
+   #content .gallery .gall_01 li:nth-child(13) {grid-area: m;background: url(../images/gall_13.webp)50% 50% no-repeat; background-size: cover;}
+   #content .gallery .gall_01 li:nth-child(14) {grid-area: n;background: url(../images/gall_14.webp)50% 50% no-repeat; background-size: cover;}
+   #content .gallery .gall_01 li:nth-child(15) {grid-area: o;background: url(../images/gall_15.webp)50% 50% no-repeat; background-size: cover;}
+
+   #content .gall_01 li:nth-child(n+11) {display: none;}
 
 
-/* & 와이드 끝 */
+/* ^ 와이드 끝 */
 
 
 /* 일반 pc */
@@ -166,16 +174,32 @@
    #content .trailer .trail_02 li:nth-child(3) {display: none;}
    #content .trailer p {line-height: 1.7rem;}
 
+   #content .gall_01 li:nth-child(n+11) {display: block;}
+   #content .gall_01 li:nth-child(-n+7) {display: none;}
+
+
+   #content .gallery .gall_01 {
+
+      
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: 
+      "k k m"
+      "k k o"
+      "n n o"
+      "h j j"
+      ;}
+
 }
 
 /* 소형 테블릿 */
 @media screen and (max-width:768px) {
    #content .about p{width: 110vw ; }
-
 }
 
 /* 모바일 */
 @media screen and (max-width:640px) {
+   #content .trailer .trail_02 {height: 24.5vw;}
+
    #content .cast .cast_01 li:nth-of-type(1) div {background-position: left top;}
    #content .cast .cast_02 li:nth-of-type(1) div {background-position: left top;}
 
@@ -192,7 +216,26 @@
    #content .trailer .trail_02 li:not(:nth-child(2n)) {display: none;}
    #content  h3 {text-align: center; font-size: 1.7rem;}
 
+   #content .gall_01 li:nth-child(n+11) {display: block;}
+   #content .gall_01 li:nth-child(-n+7) {display: none;}
 
+
+   #content .gallery .gall_01 {
+
+      
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: 
+      "k k "
+      "k k "
+      "k k "
+
+      "n o "
+      "h o "
+      ;}
+
+
+
+   
 }
 
 
