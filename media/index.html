@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
 	<meta charset="UTF-8">
@@ -13,8 +13,9 @@
 
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/layout.css">
-
-	<script src="js/prefixfree.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/hoverbase.css" />
+	<script src="https://kit.fontawesome.com/218900a9a2.js" crossorigin="anonymous"></script>
+	<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
 
 
 	<script>
@@ -48,6 +49,8 @@
 		<header id="headerArea">
 			<div class="headerInner">
 				<h1><a href="#">Pixels Logo</a></h1>
+				<a class="menuOpen" href="#"><span>Menu Open</span></a>
+
 				<nav id="gnb">
 					<h2 class="hidden">Navigation Area</h2>
 					<ul>
@@ -65,6 +68,8 @@
 						</li>
 					</ul>
 				</nav>
+				<div class="nav_bg"></div>
+
 			</div>
 		</header>
 
@@ -75,93 +80,232 @@
 			<section class="about">
 				<h3>About</h3>
 				<span>
-				<p class="text">At a video game arcade in 1982 with his friend Will Cooper, 13-year-old Sam Brenner discovers he can
-					master the games by spotting patterns. He seemingly loses a championship game of Donkey Kong to
-					obnoxious Eddie "the Fireblaster" Plant. </p>
-				<ul class="ab_01">
-					<li class="tablet"></li>
-					<li></li>
-					<li></li>
-				</ul>
+					<p class="text">At a video game arcade in 1982 with his friend Will Cooper, 13-year-old Sam Brenner
+						discovers he can
+						master the games by spotting patterns. He seemingly loses a championship game of Donkey Kong to
+						obnoxious Eddie "the Fireblaster" Plant. </p>
+					<ul class="ab_01">
+						<li class="tablet item">
+							<div class="item__img glitch" style="--img:url(../images/ab.jpg);" data-tilt data-tilt-max="15" data-tilt-speed="3000" data-tilt-perspective="1500" data-tilt-scale="0.95">
+								<div class="glitch__img"></div>
+								<div class="glitch__img"></div>
+								<div class="glitch__img"></div>
+								<div class="glitch__img"></div>
+								<div class="glitch__img"></div>
+							</div>
+							<div class="item__cover"></div>
+						</li>
+						<li class="item">
+							<div class="item__img glitch" style="--img:url(../images/about_2p.webp);" data-tilt
+								data-tilt-max="15" data-tilt-speed="3000" data-tilt-perspective="1500"
+								data-tilt-scale="0.95">
+								<div class="glitch__img"></div>
+								<div class="glitch__img"></div>
+								<div class="glitch__img"></div>
+								<div class="glitch__img"></div>
+								<div class="glitch__img"></div>
+							</div>
+							<div class="item__cover"></div>
+						</li>
+						<li class="item">
+							<div class="item__img glitch" style="--img:url(../images/about_3p.webp);" data-tilt
+								data-tilt-max="15" data-tilt-speed="3000" data-tilt-perspective="1500"
+								data-tilt-scale="0.95">
+								<div class="glitch__img"></div>
+								<div class="glitch__img"></div>
+								<div class="glitch__img"></div>
+								<div class="glitch__img"></div>
+								<div class="glitch__img"></div>
+							</div>
+							<div class="item__cover"></div>
+						</li>
+					</ul>
 				</span>
 				<ul class="ab_02">
-					<li></li>
-					<li></li>
-					<li></li>
+					<li class="item">
+						<div class="item__img glitch" style="--img:url(../images/about2_1p.webp);" data-tilt
+							data-tilt-max="15" data-tilt-speed="3000" data-tilt-perspective="1500"
+							data-tilt-scale="0.95">
+							<div class="glitch__img"></div>
+							<div class="glitch__img"></div>
+							<div class="glitch__img"></div>
+							<div class="glitch__img"></div>
+							<div class="glitch__img"></div>
+						</div>
+						<div class="item__cover"></div>
+					</li>
+					<li class="tablet item">
+						<div class="item__img glitch" style="--img:url(../images/about2_2p.webp);" data-tilt
+							data-tilt-max="15" data-tilt-speed="3000" data-tilt-perspective="1500"
+							data-tilt-scale="0.95">
+							<div class="glitch__img"></div>
+							<div class="glitch__img"></div>
+							<div class="glitch__img"></div>
+							<div class="glitch__img"></div>
+							<div class="glitch__img"></div>
+						</div>
+						<div class="item__cover"></div>
+					</li>
+					<li class="item">
+						<div class="item__img glitch" style="--img:url(../images/about2_3p.webp);" data-tilt
+							data-tilt-max="15" data-tilt-speed="3000" data-tilt-perspective="1500"
+							data-tilt-scale="0.95">
+							<div class="glitch__img leftTop"></div>
+							<div class="glitch__img leftTop"></div>
+							<div class="glitch__img leftTop"></div>
+							<div class="glitch__img leftTop"></div>
+							<div class="glitch__img leftTop"></div>
+						</div>
+						<div class="item__cover"></div>
+					</li>
+
 				</ul>
 
 			</section>
 			<section class="cast">
 				<h3>Character</h3>
-				<p class="text">Brenner works at the home of divorced U.S. Army Lieutenant Colonel Violet van Patten, and the two are
+				<p class="text">Brenner works at the home of divorced U.S. Army Lieutenant Colonel Violet van Patten,
+					and the two are
 					separately summoned to the White House. Upon seeing the video footage and meeting with Ludlow "the
 					Wonder Kid" Lamonsoff, Brenner determines the aliens have misinterpreted the videocassette images as
 					a declaration of war.</p>
 				<ul class="cast_01 cast_grid">
-					<li>
-						<div></div>
+					<li class="item">
+						<div class="item__img glitch" style="--img:url(../images/cast_1p.webp);" data-tilt
+							data-tilt-max="15" data-tilt-speed="3000" data-tilt-perspective="1500"
+							data-tilt-scale="0.95">
+							<div class="glitch__img Top50"></div>
+							<div class="glitch__img Top50"></div>
+							<div class="glitch__img Top50"></div>
+							<div class="glitch__img Top50"></div>
+							<div class="glitch__img Top50"></div>
+						</div>
+						<div class="item__cover"></div>
 						<dl>
 							<dt>Sam Brenner</dt>
-							<dd>makes an appearance in the movie as one of the three main antagonists.</dd>
+							<dd>The Donkey Kong champion of the world.</dd>
 						</dl>
 					</li>
-					<li>
-						<div></div>
+
+					<li class="item">
+						<div class="item__img glitch" style="--img:url(../images/cast_2p.webp);" data-tilt
+							data-tilt-max="15" data-tilt-speed="3000" data-tilt-perspective="1500"
+							data-tilt-scale="0.95">
+							<div class="glitch__img Top50"></div>
+							<div class="glitch__img Top50"></div>
+							<div class="glitch__img Top50"></div>
+							<div class="glitch__img Top50"></div>
+							<div class="glitch__img Top50"></div>
+						</div>
+						<div class="item__cover"></div>
 						<dl>
 							<dt>Will Cooper</dt>
-							<dd>makes an appearance in the movie as one of the three main antagonists.</dd>
+							<dd>William Cooper is the president of the United States and is Sam Brenner's best friend.</dd>
 						</dl>
 					</li>
-					<li class="del">
-						<div></div>
+					<li class="del item">
+						<div class="item__img glitch" style="--img:url(../images/cast_3p.webp);" data-tilt
+							data-tilt-max="15" data-tilt-speed="3000" data-tilt-perspective="1500"
+							data-tilt-scale="0.95">
+							<div class="glitch__img Top50"></div>
+							<div class="glitch__img Top50"></div>
+							<div class="glitch__img Top50"></div>
+							<div class="glitch__img Top50"></div>
+							<div class="glitch__img Top50"></div>
+						</div>
+						<div class="item__cover"></div>
 
 						<dl>
 							<dt>Ludlow Lamonsoff</dt>
-							<dd>makes an appearance in the movie as one of the three main antagonists.</dd>
+							<dd>Ludlow is a fat guy who has black hair, wears a beige jacket with a grey shirt.</dd>
 						</dl>
 					</li>
-					<li class="del">
-						<div></div>
+					<li class="del item">
+						<div class="item__img glitch" style="--img:url(../images/cast_4p.webp);" data-tilt
+							data-tilt-max="15" data-tilt-speed="3000" data-tilt-perspective="1500"
+							data-tilt-scale="0.95">
+							<div class="glitch__img Top50"></div>
+							<div class="glitch__img Top50"></div>
+							<div class="glitch__img Top50"></div>
+							<div class="glitch__img Top50"></div>
+							<div class="glitch__img Top50"></div>
+						</div>
+						<div class="item__cover"></div>
 
 						<dl>
 							<dt>Violet</dt>
-							<dd>makes an appearance in the movie as one of the three main antagonists.</dd>
+							<dd>Violet is a divorced woman and the single-mother of Matty</dd>
 						</dl>
 					</li>
-					</ul>
-					<ul class="cast_02 cast_grid">
-					<li>
-						<div></div>
-
+				</ul>
+				<ul class="cast_02 cast_grid">
+					<li class="item">
+						<div class="item__img glitch" style="--img:url(../images/cast_5p.webp);" data-tilt
+							data-tilt-max="15" data-tilt-speed="3000" data-tilt-perspective="1500"
+							data-tilt-scale="0.95">
+							<div class="glitch__img Top50"></div>
+							<div class="glitch__img Top50"></div>
+							<div class="glitch__img Top50"></div>
+							<div class="glitch__img Top50"></div>
+							<div class="glitch__img Top50"></div>
+						</div>
+						<div class="item__cover"></div>
 						<dl>
 							<dt>Donkey Kong</dt>
 
-							<dd>makes an appearance in the movie as one of the three main antagonists.</dd>
+							<dd>Donkey Kong makes an appearance as the movie main antagonists.</dd>
 						</dl>
 					</li>
-					<li>
-						<div></div>
+					<li class="item">
+						<div class="item__img glitch" style="--img:url(../images/cast_6p.webp);" data-tilt
+							data-tilt-max="15" data-tilt-speed="3000" data-tilt-perspective="1500"
+							data-tilt-scale="0.95">
+							<div class="glitch__img"></div>
+							<div class="glitch__img"></div>
+							<div class="glitch__img"></div>
+							<div class="glitch__img"></div>
+							<div class="glitch__img"></div>
+						</div>
+						<div class="item__cover"></div>
 
 						<dl>
 							<dt>Pac-man</dt>
 
-							<dd>makes an appearance in the movie as one of the three main antagonists.</dd>
+							<dd>Pac-man makes an appearance in the movie as one of the three main antagonists.</dd>
 						</dl>
 					</li>
-					<li class="del">
-						<div></div>
+					<li class="del item">
+						<div class="item__img glitch" style="--img:url(../images/cast_7p.webp);" data-tilt
+							data-tilt-max="15" data-tilt-speed="3000" data-tilt-perspective="1500"
+							data-tilt-scale="0.95">
+							<div class="glitch__img"></div>
+							<div class="glitch__img"></div>
+							<div class="glitch__img"></div>
+							<div class="glitch__img"></div>
+							<div class="glitch__img"></div>
+						</div>
+						<div class="item__cover"></div>
 
 						<dl>
 							<dt>Tetris</dt>
-							<dd>makes an appearance in the movie as one of the three main antagonists.</dd>
+							<dd>Blocks from Tetris appear during the invasion scene, destroying buildings.</dd>
 						</dl>
 					</li>
-					<li class="del">
-						<div></div>
+					<li class="del item">
+						<div class="item__img glitch" style="--img:url(../images/cast_8p.webp);" data-tilt
+							data-tilt-max="15" data-tilt-speed="3000" data-tilt-perspective="1500"
+							data-tilt-scale="0.95">
+							<div class="glitch__img"></div>
+							<div class="glitch__img"></div>
+							<div class="glitch__img"></div>
+							<div class="glitch__img"></div>
+							<div class="glitch__img"></div>
+						</div>
+						<div class="item__cover"></div>
 
 						<dl>
 							<dt>Galaga</dt>
-							<dd>makes an appearance in the movie as one of the three main antagonists.</dd>
+							<dd>The aliens's mothership is designed after Galaga's main enemy, the Boss Galaga.</dd>
 						</dl>
 					</li>
 				</ul>
@@ -170,21 +314,22 @@
 			<section class="trailer">
 				<h3>Trailer</h3>
 				<span class="trail_01">
-				<p class="text">The aliens launch a massive attack in Washington, D.C. using an army of characters and enemies from
-					the games. Cooper joins the team, while Ludlow stays to fight. An alien takes the form of "Lady
-					Lisa", a character on whom Ludlow had a crush since childhood. </p>
-				<div></div>
+					<p class="text">The aliens launch a massive attack in Washington, D.C. using an army of characters
+						and enemies from
+						the games. Cooper joins the team, while Ludlow stays to fight. An alien takes the form of "Lady
+						Lisa", a character on whom Ludlow had a crush since childhood. </p>
+					<div><a href="#"><i class="fa-brands fa-youtube"></i></a></div>
 				</span>
 				<ul class="trail_02">
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
+					<li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+					<li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+					<li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+					<li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
 				</ul>
 			</section>
 			<section class="gallery">
 				<h3>Gallery</h3>
-				<div >
+				<div>
 					<ul class="gall_01">
 						<li></li>
 						<li></li>
@@ -200,7 +345,7 @@
 						<li></li>
 						<li></li>
 						<li></li>
-						<li></li>
+						<li class="last"></li>
 					</ul>
 				</div>
 			</section>
@@ -223,6 +368,7 @@
 
 
 		<footer id="footerArea">
+			<a href="#" class="quicktop">TOP</a>
 			<img src="#" alt="">
 			<div>
 				<p>PIXELS</p>
@@ -235,6 +381,8 @@
 	<script src="js/jquery-migrate-1.4.1.min.js"></script>
 	<script src="js/video.js"></script>
 	<script src="./js/index.js"></script>
+	<script src="./js/common.js"></script>
+	<script type="text/javascript" src="js/vanilla-tilt.js"></script>
 
 
 </body>

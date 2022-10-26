@@ -1,4 +1,31 @@
-// $(document).ready(function () {
+$(document).ready(function () {
+
+$('.trail_01 div').hover(function(){
+    $(this).find('a').addClass('aHover')
+    $(this).find('i').addClass('iHover')
+
+}, function (){
+    $(this).find('a').removeClass('aHover')
+    $(this).find('i').removeClass('iHover')
+
+})
+$('.trail_02 li').hover(function(){
+    $(this).find('a').addClass('aHover')
+    $(this).find('i').addClass('iHover')
+
+}, function (){
+    $(this).find('a').removeClass('aHover')
+    $(this).find('i').removeClass('iHover')
+
+}
+// , function() {
+//     $(this).removeClass('aHover')
+//     $(this).find('i').removerClass('iHover')
+// }
+)  
+
+
+    
 // //   $(".about li").each(function (e) {
 // //     $(".about li:eq("+e+")").css('background', 'url("./images/about_'+ (e+1) +'.webp")')
 // //   });
@@ -52,4 +79,4 @@
 // //   $(".gallery li").each(function (e) {
 
 // //   });
-// });
+});
