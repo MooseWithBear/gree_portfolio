@@ -41,7 +41,7 @@
    display:none
 }
 
-.down{display: block; font-size: 20px; position: absolute; 
+.down{display: block; font-size: 30px; position: absolute; 
 	  bottom: 20%; 
 	animation:ani 1s infinite  alternate;}
 @keyframes ani {
@@ -61,6 +61,8 @@
 
 
 #content .about {}
+#content .aboutBox {display: flex;}
+
 #content .about ul {margin-top: 0;}
 #content .about ul li {}
 #content .about ul li { }
@@ -141,7 +143,7 @@
 
 .trailer .trail_02 i.iHover {font-size: 0px;}
 .trailer .trail_02 i{font-size: 3.9rem; background-size: 1.6rem;}
-#content .gallery {}
+#content .gallery {position: relative;}
 #content .gallery h3 {text-align: center;}
 
 #content .gallery .gall_01 {
@@ -213,6 +215,7 @@
 
 /* 태블릿 */
 @media screen and (max-width:1024px) {
+   .down {font-size: 20px;}
    #content .about .ab_02 li:nth-of-type(1) {width: 33%;}
    #content .about .ab_02 li:nth-of-type(2) {display: none;}
 
@@ -257,6 +260,9 @@
 /* 소형 테블릿 */
 @media screen and (max-width:768px) {
    #content .about p{width: 110vw ; }
+   #content h3 {padding-top: 100px;}
+   #content .trailer .trail_01 {height: 32.125vw;}
+   #content .trailer p {line-height: 1.5rem;}
 }
 
 /* 모바일 */
@@ -290,7 +296,6 @@
    
    .trailer .trail_02 i{font-size: 2.775rem; background-size: 1.6rem;}
 
-   
    #content .gallery .gall_01 li:not(li:nth-child(n+12):nth-child(-n+15)) {display: none;}
    #content .gallery  .gall_01 li:nth-child(n+12):nth-child(-n+15) {display: block;}
 

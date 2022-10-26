@@ -13,7 +13,7 @@
 
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/layout.css">
-	<link rel="stylesheet" type="text/css" href="css/hoverbase.css" />
+	<link rel="stylesheet" type="text/css" href="css/hoverbase.css" >
 	<script src="https://kit.fontawesome.com/218900a9a2.js" crossorigin="anonymous"></script>
 	<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
 
@@ -41,7 +41,7 @@
 			<!-- <img id="temp" src="./images/visual.webp" alt=""> -->
 
 			<video autoplay loop muted id="videoBG"></video>
-			<img src="images/visual.webp" id="imgBG">
+			<img src="images/visual.webp" id="imgBG" alt="모바일이미지">
 
 			<a class="down" href="#">INSERT COIN</a>
 		</div>
@@ -79,7 +79,7 @@
 			<!-- <section class="titleGrid">고민중</section> -->
 			<section class="about">
 				<h3>About</h3>
-				<span>
+				<div class="aboutBox">
 					<p class="text">At a video game arcade in 1982 with his friend Will Cooper, 13-year-old Sam Brenner
 						discovers he can
 						master the games by spotting patterns. He seemingly loses a championship game of Donkey Kong to
@@ -120,7 +120,7 @@
 							<div class="item__cover"></div>
 						</li>
 					</ul>
-				</span>
+				</div>
 				<ul class="ab_02">
 					<li class="item">
 						<div class="item__img glitch" style="--img:url(../images/about2_1p.webp);" data-tilt
@@ -183,7 +183,7 @@
 						<div class="item__cover"></div>
 						<dl>
 							<dt>Sam Brenner</dt>
-							<dd>The Donkey Kong champion of the world.</dd>
+							<dd> He was an expert arcade gamer who worked for the Nerd Brigade.</dd>
 						</dl>
 					</li>
 
@@ -234,7 +234,7 @@
 
 						<dl>
 							<dt>Violet</dt>
-							<dd>Violet is a divorced woman and the single-mother of Matty</dd>
+							<dd>Violet Van Patten is of the tritagonist and the love interest of Sam Brenner</dd>
 						</dl>
 					</li>
 				</ul>
@@ -313,13 +313,13 @@
 			</section>
 			<section class="trailer">
 				<h3>Trailer</h3>
-				<span class="trail_01">
+				<div class="trail_01">
 					<p class="text">The aliens launch a massive attack in Washington, D.C. using an army of characters
 						and enemies from
 						the games. Cooper joins the team, while Ludlow stays to fight. An alien takes the form of "Lady
 						Lisa", a character on whom Ludlow had a crush since childhood. </p>
 					<div><a href="#"><i class="fa-brands fa-youtube"></i></a></div>
-				</span>
+				</div>
 				<ul class="trail_02">
 					<li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
 					<li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
@@ -348,6 +348,7 @@
 						<li class="last"></li>
 					</ul>
 				</div>
+				<!-- <span class="cursor_follower"></span> -->
 			</section>
 			<div class="gameOver">
 				<p></p>
@@ -382,7 +383,7 @@
 	<script src="js/video.js"></script>
 	<script src="./js/index.js"></script>
 	<script src="./js/common.js"></script>
-	<script type="text/javascript" src="js/vanilla-tilt.js"></script>
+	<script src="js/vanilla-tilt.js"></script>
 
 
 </body>
