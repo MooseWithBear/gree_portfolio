@@ -23,6 +23,7 @@ font-family: 'VT323', monospace;
 }  */
 
 /* Reset CSS  */
+#content {height: auto;background:#000}
 
 * { margin:0; padding:0; border:0; outline:0; vertical-align:top;
 -webkit-text-size-adjust:none;  }
@@ -34,11 +35,13 @@ ul, ol, dl { list-style:none; }
 img, video {border:0; vertical-align:top; }
 a, a:link {color:#333;text-decoration:none; }
 a:visited { color:#333; }
-a:hover, a:active {color:#333;text-decoration:none;     background: rgb(230, 49, 2);
+a:hover, a:active {text-decoration:none;     
+    
+ }
+ a:hover span {background: rgb(230, 49, 2);
     background: linear-gradient(0deg, rgba(230, 49, 2, 1) 0%, rgba(230, 49, 2, 1) 17%, rgba(247, 124, 5, 1) 17%, rgba(247, 124, 5, 1) 30%, rgba(247, 165, 0, 1) 30%, rgba(247, 165, 0, 1) 50%, rgba(254, 207, 1, 1) 50%, rgba(254, 207, 1, 1) 70%, rgba(224, 239, 14, 1) 70%, rgba(224, 239, 14, 1) 90%, rgba(224, 239, 14, 1) 90%, rgba(224, 239, 14, 1) 93%, rgba(242, 242, 242, 1) 93%, rgba(242, 242, 242, 1) 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
- }
+    -webkit-text-fill-color: transparent;}
 table { border-collapse:collapse; border-spacing:0; }
 input, select { vertical-align:middle; }
 label { cursor:pointer; }
@@ -56,12 +59,16 @@ p,li,dd{ line-height:1.5em}
     width: 100%;}	
 #headerArea	.headerInner{margin:0 3.125vw; box-sizing: border-box; width: 100vw; display: flex; overflow: hidden;}
 #headerArea h1{  margin-top: 15px; width: 50vw;}
-#headerArea h1 a{min-width: 100px; color: #fff; text-decoration: none; display:block; width: 7.8125vw; height: 65px; background:url(../images/logo.png) 0 50% no-repeat; background-size:100% auto; text-indent:-9999%; font-size: 0; overflow: hidden; }	
+#headerArea h1 a{ min-width: 100px; color: #fff; text-decoration: none; display:block; width: 7.8125vw; height: 65px; background:url(../images/logo.png) 0 50% no-repeat; background-size:100% auto; text-indent:-9999%; font-size: 0; overflow: hidden; }	
 #headerArea #gnb{ width: 50vw;}
 #headerArea #gnb ul{height: 100%;  overflow: hidden; display: flex; justify-content: space-between; align-items: center;  }
 #headerArea #gnb ul li{ }
 #headerArea #gnb ul li.last {margin: 0;}
-#headerArea #gnb ul li a{color: #fff; text-decoration: none; font-size: 1.25vw;}
+#headerArea #gnb ul li a{color: #fff; text-decoration: none; font-size: 1.25vw; display: block; padding: 8% 0;}
+#headerArea #gnb ul li a:hover span{background: rgb(230, 49, 2);
+    background: linear-gradient(0deg, rgba(230, 49, 2, 1) 0%, rgba(230, 49, 2, 1) 17%, rgba(247, 124, 5, 1) 17%, rgba(247, 124, 5, 1) 30%, rgba(247, 165, 0, 1) 30%, rgba(247, 165, 0, 1) 50%, rgba(254, 207, 1, 1) 50%, rgba(254, 207, 1, 1) 70%, rgba(224, 239, 14, 1) 70%, rgba(224, 239, 14, 1) 90%, rgba(224, 239, 14, 1) 90%, rgba(224, 239, 14, 1) 93%, rgba(242, 242, 242, 1) 93%, rgba(242, 242, 242, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
 
 /* on */
 #headerArea.on{height:80px; background:rgba(19,16,33,0.9);}
@@ -194,3 +201,17 @@ p,li,dd{ line-height:1.5em}
 @media screen and (max-width:480px) {
 	#wrap { min-width:320px; }
 }
+
+
+
+
+
+/* !컨텐츠 공통 */
+#content p {align-self: center; text-align: justify; word-break: break-all; font-size: 1.5vw;font-family: 'Silkscreen', cursive; line-height: 3.6rem ;transition: all 0.3s ease-out;}
+#content{  width:93.75vw; margin:0 3.125vw;   }
+#content h3{font-size: 2.3rem; line-height: 3.6rem; margin: 60px 0; padding-top:200px ; letter-spacing: 0.2rem;}
+#content .about p{width: 43.75vw;}
+#content div {}
+#content ul {margin-top: 4%; width: 100%; }
+#content li {transition: all 0.5s ease-out; }
+
