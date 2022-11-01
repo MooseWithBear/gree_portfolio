@@ -149,7 +149,8 @@ p,li,dd{ line-height:1.5em}
 
 /* 일반 pc */
 @media screen and (max-width:1280px) {
-	
+    #content p {font-size: 1.5rem; line-height: 2.5rem}
+
 }
 
 /* 테블릿 */
@@ -181,6 +182,7 @@ p,li,dd{ line-height:1.5em}
 
 /* 소형 테블릿 */
 @media screen and (max-width:768px) {
+    #content h3 {padding-top: 100px;}
 	#headerArea,
 	#headerArea h1 a{height: 60px;}
 	#headerArea h1 a{width:80px;}
@@ -214,4 +216,4 @@ p,li,dd{ line-height:1.5em}
 #content div {}
 #content ul {margin-top: 4%; width: 100%; }
 #content li {transition: all 0.5s ease-out; }
-
+#content dd {margin-top: 1.25rem; display: -webkit-box; text-align: justify; word-break: break-all; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;}

@@ -26,6 +26,11 @@
 	--blend-color-3: #3124c7;
 	--blend-color-4: #3124c7;
 	--blend-color-5: #f3727e;
+	--blend-color-6: #55e69e;
+	--blend-color-7: #82226f;
+	--blend-color-8: #1e8721;
+	--blend-color-9: #83bfea;
+	--blend-color-10: #7fae08;
 	/* Rotation variables */
 	--rotate-time: 0.5s;
 	--rotate-easing: cubic-bezier(0.2,1,0.3,1);
@@ -104,6 +109,13 @@
 	background-blend-mode: var(--blend-mode-1);
 }
 
+
+.type2 {
+
+	background-color: var(--blend-color-10);
+
+}
+
 .glitch__img.leftTop {
 	grid-area: 1 / 1 / -1 / -1;
 	background-image: var(--img);
@@ -149,6 +161,28 @@
 	background-color: var(--blend-color-5);
 	background-blend-mode: var(--blend-mode-5);
 }
+
+
+.type2:nth-child(2) {
+	background-color: var(--blend-color-6);
+	background-blend-mode: var(--blend-mode-2);
+}
+
+.type2:nth-child(3) {
+	background-color: var(--blend-color-7);
+	background-blend-mode: var(--blend-mode-3);
+}
+
+.type2:nth-child(4) {
+	background-color: var(--blend-color-8);
+	background-blend-mode: var(--blend-mode-4);
+}
+
+.type2:nth-child(5) {
+	background-color: var(--blend-color-9);
+	background-blend-mode: var(--blend-mode-5);
+}
+
 
 /* Hide all images except the first one */
 .glitch__img:nth-child(n+2) {

@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="no-js">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -14,10 +14,28 @@
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="./css/sub3.css">
 	<link rel="stylesheet" type="text/css" href="css/hoverbase.css">
+<link rel="stylesheet" href="./css/magnific-popup.css">
+<!-- <link rel="stylesheet" href="./css/movieClip2.css"> -->
 	<script src="https://kit.fontawesome.com/218900a9a2.js" crossorigin="anonymous"></script>
 	<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+<script src="./js/jquery-1.12.4.min.js"></script>     
+<script src="js/jquery-migrate-1.4.1.min.js"></script>
+	 <script src="./js/jquery.magnific-popup.min.js"></script>
 
+	<script>
+		$(document).ready(function() {
+			$('.popup-youtube').magnificPopup({
+				disableOn: 320,
+				type: 'iframe',
+				mainClass: 'mfp-fade',
+				removalDelay: 160,
+				preloader: true,
 
+				fixedContentPos: false
+			});
+		});
+
+	</script>
 	<script>
 		// <![CDATA[
 		try {
@@ -27,6 +45,7 @@
 		} catch (e) {}
 		// ]]>
 	</script>
+
 </head>
 
 <body>
@@ -66,7 +85,7 @@
 		</header>
 		<div class="videoBox">
 			<h2>TRAILER</h2>
-			<img id="temp" src="./images/sub1/sub1_bg.jpg" alt="">
+			<!-- <img id="temp" src="./images/sub1/sub1_bg.jpg" alt=""> -->
 			<!-- <video autoplay loop muted id="videoBG"></video> -->
 			<img src="./images/sub1/sub1_bg.jpg" id="imgBG" alt="모바일이미지">
 			<a class="down" href="#"><span>INSERT COIN</span></a>
@@ -80,54 +99,58 @@
 				<p>official Trailer</p>
 				<div class="subInner subTrailerInner">
 					<ul>
-						<li class="lili">
-							<a href="#">
-								<div><img id="img1" onmouseover="hover(this);" onmouseout="unhover(this);" src="./images/index/trailer_2.webp" alt="youtube thumnail"></div>
-								<!-- <div></div> -->
+						<li>
+							<div class="pixel">
+								<a class="popup-youtube" href="https://www.youtube.com/watch?v=XAHprLW48no">
+								<div class="background" ></div>
 								<dl>
-                                    <dt>Coco - Official US Trailer</dt>
-                                    <dd>
-                                        Watch the new trailer for Disney·Pixar's Coco. See the film in theatres November 22 in 3D!<br>
-                                        Despite his family’s baffling generations-old ban on music, Miguel (voice of newcomer Anthony Gonzalez) dreams of becoming an accomplished musician like his idol, Ernesto de la Cruz (voice of Benjamin Bratt).
-                                    </dd>
+									<dt>PIXELS - Official Trailer #1</dt>
+									<dd>
+										it's game on or game over!  When aliens misinterpret video feeds of classic arcade games as a declaration of war, they attack the Earth in the form of the video games. 
+									</dd>
 								</dl>
 							</a>
+						</div>
 						</li>
 						<li>
-							<a href="#">
-								<div><img src="./images/index/trailer_2.webp" alt="youtube thumnail"></div>
+							<div class="pixel">
+
+							<a class="popup-youtube" href="https://www.youtube.com/watch?v=05t2VQ_wxpY&t=57s">
+								<div class="background" ></div>
 								<dl>
-                                    <dt>Coco - Official US Trailer</dt>
-                                    <dd>
-                                        Watch the new trailer for Disney·Pixar's Coco. See the film in theatres November 22 in 3D!<br>
-                                        Despite his family’s baffling generations-old ban on music, Miguel (voice of newcomer Anthony Gonzalez) dreams of becoming an accomplished musician like his idol, Ernesto de la Cruz (voice of Benjamin Bratt).
-                                    </dd>
+									<dt>PIXELS - Official Trailer #2</dt>
+									<dd>
+										As kids in the 1980s, Sam Brenner (Adam Sandler), Will Cooper (Kevin James), Ludlow Lamonsoff (Josh Gad), and Eddie “The Fire Blaster” Plant (Peter Dinklage) saved the world thousands of times at 25 cents a game in the video arcades. Now, they’re going to have to do it for real. 
+									</dd>
 								</dl>
 							</a>
+							</div>
 						</li>
 						<li>
-							<a href="#">
-								<div><img src="./images/index/trailer_2.webp" alt="youtube thumnail"></div>
+							<div class="pixel">
+							<a class="popup-youtube" href="https://www.youtube.com/watch?v=WB7iK-BZ7iM&t=8s">
+								<div class="background" ></div>
 								<dl>
-                                    <dt>Coco - Official US Trailer</dt>
-                                    <dd>
-                                        Watch the new trailer for Disney·Pixar's Coco. See the film in theatres November 22 in 3D!<br>
-                                        Despite his family’s baffling generations-old ban on music, Miguel (voice of newcomer Anthony Gonzalez) dreams of becoming an accomplished musician like his idol, Ernesto de la Cruz (voice of Benjamin Bratt).
-                                    </dd>
+									<dt>PIXELS by Patrick JEAN</dt>
+									<dd>
+										A first-of-its-kind edit of Patrick Jean's homage to classic video games as the Earth gets Cubified, starting with Lower Manhattan. 
+									</dd>
 								</dl>
 							</a>
+							</div>
 						</li>
 						<li>
-							<a href="#">
-								<div><img src="./images/index/trailer_2.webp" alt="youtube thumnail"></div>
+							<div class="pixel">
+							<a class="popup-youtube" href="https://www.youtube.com/watch?v=05t2VQ_wxpY&t=67s">
+								<div class="background" ></div>
 								<dl>
-                                    <dt>Coco - Official US Trailer</dt>
-                                    <dd>
-                                        Watch the new trailer for Disney·Pixar's Coco. See the film in theatres November 22 in 3D!<br>
-                                        Despite his family’s baffling generations-old ban on music, Miguel (voice of newcomer Anthony Gonzalez) dreams of becoming an accomplished musician like his idol, Ernesto de la Cruz (voice of Benjamin Bratt).
-                                    </dd>
+									<dt>Pixels - Official International Trailer</dt>
+									<dd>
+										it's game on or game over!  When aliens misinterpret video feeds of classic arcade games as a declaration of war, they attack the Earth in the form of the video games. 
+									</dd>
 								</dl>
 							</a>
+							</div>
 						</li>
 					</ul>
 
@@ -152,12 +175,12 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/jquery-1.12.4.min.js"></script>
-	<script src="js/jquery-migrate-1.4.1.min.js"></script>
+
 	<script src="js/video.js"></script>
 	<script src="./js/common.js"></script>
 	<script src="js/vanilla-tilt.js"></script>
-	<script src="./js/sub3.js"></script>
+	<script src="./js/sub.js"></script>
+
 
 
 </body>

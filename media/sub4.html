@@ -12,11 +12,10 @@
 	<link rel="apple-touch-startup-image" href="startup.png">
 
 	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" href="./css/sub1.css">
+	<link rel="stylesheet" href="./css/sub4.css">
 	<link rel="stylesheet" type="text/css" href="css/hoverbase.css" >
 	<script src="https://kit.fontawesome.com/218900a9a2.js" crossorigin="anonymous"></script>
 	<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
-
 
 	<script>
 		// <![CDATA[
@@ -65,14 +64,64 @@
 			</div>
 		</header>
 		<div class="videoBox">
-			<h2>ABOUT</h2>
-			<img id="temp" src="./images/sub1/sub1_bg.jpg" alt="">
+			<h2>GALLERY</h2>
+			<!-- <img id="temp" src="./images/sub1/sub1_bg.jpg" alt=""> -->
 			<!-- <video autoplay loop muted id="videoBG"></video> -->
 			<img src="./images/sub1/sub1_bg.jpg" id="imgBG" alt="모바일이미지">
 			<a class="down" href="#"><span>INSERT COIN</span></a>
 		</div>
 		<article id="content">
 			<h2 class="hidden">Body Content Area</h2>
+
+<section class="subGallery">
+
+
+	<div class="grid">
+		<div class="grid-sizer"></div>
+		<div class="grid-item"><img src="images/fitem01.jpg"></div>
+		<div class="grid-item"><img src="images/fitem02.jpg"></div>
+		<div class="grid-item"><img src="images/fitem03.jpg"></div>
+		<div class="grid-item"><img src="images/fitem04.jpg"></div>
+		<div class="grid-item"><img src="images/fitem05.jpg"></div>
+		<div class="grid-item"><img src="images/fitem06.jpg"></div>
+		<div class="grid-item"><img src="images/fitem07.jpg"></div>
+		<div class="grid-item"><img src="images/fitem08.jpg"></div>
+		<div class="grid-item"><img src="images/fitem09.jpg"></div>
+		<div class="grid-item"><img src="images/fitem10.jpg"></div>
+		<div class="grid-item"><img src="images/fitem11.jpg"></div>
+		<div class="grid-item"><img src="images/fitem12.jpg"></div>
+		<div class="grid-item"><img src="images/fitem13.jpg"></div>
+		<div class="grid-item"><img src="images/fitem14.jpg"></div>
+		<div class="grid-item"><img src="images/fitem15.jpg"></div>
+		<div class="grid-item"><img src="images/fitem16.jpg"></div>
+		<div class="grid-item"><img src="images/fitem01.jpg"></div>
+		<div class="grid-item"><img src="images/fitem02.jpg"></div>
+		<div class="grid-item"><img src="images/fitem03.jpg"></div>
+		<div class="grid-item"><img src="images/fitem04.jpg"></div>
+		<div class="grid-item"><img src="images/fitem05.jpg"></div>
+		<div class="grid-item"><img src="images/fitem06.jpg"></div>
+		<div class="grid-item"><img src="images/fitem07.jpg"></div>
+		<div class="grid-item"><img src="images/fitem08.jpg"></div>
+		<div class="grid-item"><img src="images/fitem09.jpg"></div>
+		<div class="grid-item"><img src="images/fitem10.jpg"></div>
+		<div class="grid-item"><img src="images/fitem11.jpg"></div>
+		<div class="grid-item"><img src="images/fitem12.jpg"></div>
+		<div class="grid-item"><img src="images/fitem13.jpg"></div>
+		<div class="grid-item"><img src="images/fitem14.jpg"></div>
+		<div class="grid-item"><img src="images/fitem15.jpg"></div>
+		<div class="grid-item"><img src="images/fitem16.jpg"></div>
+		
+	  </div> 
+	  
+
+
+
+
+</section>
+
+
+
+
 
 
 
@@ -95,11 +144,23 @@
 	</div>
 	<script src="js/jquery-1.12.4.min.js"></script>
 	<script src="js/jquery-migrate-1.4.1.min.js"></script>
+	<script src="./js/masonry.pkgd.min.js"></script>
+
 	<script src="js/video.js"></script>
 	<script src="./js/common.js"></script>
 	<script src="js/vanilla-tilt.js"></script>
+	<script src="./js/sub.js"></script>
 
 
+	<script>
+        $('.grid').masonry({
+          itemSelector: '.grid-item',
+          // use element for option
+          columnWidth: '.grid-sizer',
+          percentPosition: true
+        });
+
+   </script>
 </body>
 
 </html>
