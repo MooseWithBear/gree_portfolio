@@ -1,4 +1,13 @@
 
+
+// $('.c-supermario2 div').each(function(index) {
+//     nan = Math.random()*10
+//     console.log(nan)
+//     $('.c-supermario2 div:eq('+index+')').css('animation-delay', 15000+nan+'ms')
+
+// })
+
+
 var num = 1;
 var step = 1;
 var i = 0
@@ -100,5 +109,3 @@ $('.c-supermario div').each(function(index){
     })
     
 })
-
-

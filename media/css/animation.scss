@@ -425,11 +425,24 @@ $c-supermario_run__colors : (
 
 .c-supermario2 {
   opacity: 0;
+  animation: opac 3s  forwards;
+  animation-delay: 15s;
+  animation-timing-function: cubic-beziercubic-bezier(0.1, 1.7, 1.0, 0.1);
+  transition: all 1s ease;
+}
+
+@keyframes opac {
+ to{opacity: 1;}  
+}
+
+.c-supermario2 div {
+  opacity: 0;
   animation: bounce 3s infinite;
   animation-delay: 15s;
+  animation-timing-function: cubic-beziercubic-bezier(0.1, 1.7, 1.0, 0.1);
   transition: all 1s ease;
-  animation-timing-function: cubic-beziercubic-bezier(0.1, 1.7, 1.0, 0.1) 
 }
+
 
 .c-supermario2 div,
 .c-supermario_run div {
