@@ -1,7 +1,14 @@
 $(document).ready(function(){
 
-    
-  $(document).ready(function() {
+    // let observer = new IntersectionObserver((e)=> {
+    //     e.forEach((section)=>{
+    //         if(section.isIntersecting){
+    //             section.target.style.opacity = 1;
+    //         }
+    //     })
+    // })
+
+
     var screenSize, screenHeight;
     var current=false;
 
@@ -13,7 +20,7 @@ $(document).ready(function(){
         
         if( screenSize > 768 && current==false){
             $("#videoBG").show();
-            $("#videoBG").attr('src','aaa.webm');
+            $("#videoBG").attr('src','./images/index/movie.mp4');
             $("#imgBG").hide();
             current=true;
           }
@@ -37,7 +44,6 @@ $(document).ready(function(){
 		});
 		
 		
-  });
 
 
 

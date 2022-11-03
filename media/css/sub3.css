@@ -19,7 +19,7 @@ animation:ani 1s infinite  alternate;}
     /* -webkit-text-stroke:1px #000; */
 }
 
-
+#animation {transform: scale(0.7);}
 #content h3, #content p {text-align: center;}
 #content dl {word-break: break-all; color: #fff; border:1px solid #fff ;}
 #content dt {font-family: 'Press Start 2P', cursive;}

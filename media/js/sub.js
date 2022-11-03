@@ -10,7 +10,7 @@ $(document).ready(function () {
         $("#content").css('margin-top', screenHeight);
 
         if (screenSize > 768 && current == false) {
-            $("#imgBG").show();
+            $("#imgBG").hide();
             current = true;
         }
         if (screenSize <= 768) {
