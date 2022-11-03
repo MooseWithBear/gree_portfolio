@@ -95,6 +95,30 @@ if ($('.mario').hasClass('c-pacman')){
     
     
 
+        // if ($('.mario').hasClass('c-logo')){
+        //     const run3 = setInterval (function() {
+        //         if (num==1 && step==1) {
+        //             setTimeout(logo_1,0)
+        //             num=2
+        //             step=2
+        //             i++
+        //         } 
+        //         if (num==2 && step==2) {
+        //             setTimeout(logo_2,2000)
+        //             num=1
+        //             step=1
+        //         }
+        //         if(i==30) {
+        //             clearInterval(run3);
+        //             console.log('끝')   
+        //         }
+        //         },5000)
+                
+        //         }
+            
+
+
+
 function moveRight () {
     $('.c-supermario_run').addClass('moveRight');
 }
@@ -136,6 +160,14 @@ function pinkyRun_2 () {
 }
 
 
+function logo_1 () {
+    $('.c-logo').removeClass('second')
+}
+
+
+function logo_2 () {
+    $('.c-logo').addClass('second')
+}
 
 
 $('.c-supermario div').each(function(index){

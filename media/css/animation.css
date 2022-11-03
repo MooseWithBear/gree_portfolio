@@ -14,7 +14,7 @@
   grid-template-rows: repeat(16, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  animation: gap 9.5s linear forwards;
+  animation: gap 4.5s linear forwards;
 }
 .c-supermario > div:nth-child(1) {
   background: transparent;
@@ -601,7 +601,7 @@
   grid-template-rows: repeat(14, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  animation: gap 9.5s linear forwards;
+  animation: gap 4.5s linear forwards;
 }
 .c-supermario2 > div:nth-child(1) {
   background: transparent;
@@ -3710,7 +3710,7 @@
 .c-supermario_run.moveRight {
   opacity: 0;
   animation: right 5s linear;
-  animation-delay: 9.6s;
+  animation-delay: 4.6s;
 }
 
 @keyframes right {
@@ -3786,13 +3786,13 @@
   width: 20px;
   height: 20px;
   transition: all 3s cubic-beziercubic-bezier(0.1, 0.7, 1, 0.1);
-  animation: roll 10s forwards cubic-bezier(0.29, 0.1, 1, 1.01);
+  animation: roll 5s forwards cubic-bezier(0.29, 0.1, 1, 1.01);
 }
 
 .c-supermario2 {
   opacity: 0;
   animation: opac 3s forwards;
-  animation-delay: 15s;
+  animation-delay: 10s;
   animation-timing-function: cubic-beziercubic-bezier(0.1, 1.7, 1, 0.1);
   transition: all 1s ease;
 }
@@ -3802,10 +3802,10 @@
     opacity: 1;
   }
 }
-.c-supermario2 div {
+.c-supermario2 {
   opacity: 0;
   animation: bounce 3s infinite;
-  animation-delay: 15s;
+  animation-delay: 10s;
   animation-timing-function: cubic-beziercubic-bezier(0.1, 1.7, 1, 0.1);
   transition: all 1s ease;
 }
@@ -3881,11 +3881,17 @@
     opacity: 1;
     transform: rotateY(3600deg);
   }
-  75% {
+  53% {
+    width: 5px;
+    height: 5px;
+    opacity: 1;
+    transform: rotateY(3600deg);
+  }
+  95% {
     width: 20px;
     height: 20px;
   }
-  95% {
+  96% {
     opacity: 1;
     width: 20px;
     height: 20px;
