@@ -76,3 +76,13 @@ animation:ani 1s infinite  alternate;}
     .grid-image-item,
 .grid--images .grid-sizer {width: 50%;}
 }
+
+/* 
+
+#animation .c-logo:hover div:nth-child(5) {  animation:falldown 0.1s forwards ; animation-timing-function: ease-in ;}
+#animation .c-logo div {}
+
+@keyframes falldown {
+  100%{transform: translateY(100px);}
+  
+} */
