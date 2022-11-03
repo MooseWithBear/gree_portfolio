@@ -12,6 +12,7 @@ var num = 1;
 var step = 1;
 var i = 0
 
+if ($('.mario').hasClass('c-supermario_run')){
 
 $('.c-supermario_run').addClass('moveRight');
 const run = setInterval (function() {
@@ -45,7 +46,7 @@ if (num==5 && step==5) {
     num=1
     step=1
 }
-console.log('뛰는중')
+// console.log('뛰는중')
 
 if(i==80) {
     clearInterval(run);
@@ -54,9 +55,45 @@ if(i==80) {
 }
 },200)
 
+}
 
+if ($('.mario').hasClass('c-pacman')){
 
-
+    $('.c-pacman').addClass('moveRight');
+    $('.pinky').addClass('moveRight')
+    const run2 = setInterval (function() {
+        if (num==1 && step==1) {
+            setTimeout(pacRun_1,0)
+            setTimeout(pinkyRun_1,0)
+            num=2
+            step=2
+            i++
+        } 
+        if (num==2 && step==2) {
+            setTimeout(pacRun_2,300)
+            setTimeout(pinkyRun_2,300)
+            num=1
+            step=1
+        }
+        
+        // if (num==3 && step==3) {
+        //     setTimeout(pacRun_1,600)
+        //     num=4;
+        //     step=4;
+        // }
+ 
+        // console.log('뛰는중')
+        
+        if(i==120) {
+            clearInterval(run2);
+            console.log('끝')
+            
+        }
+        },300)
+        
+        }
+    
+    
 
 function moveRight () {
     $('.c-supermario_run').addClass('moveRight');
@@ -74,6 +111,28 @@ function run_2 () {
 function run_3 () {
     $('.c-supermario_run').removeClass('second').removeClass('third')
     $('.c-supermario_run').addClass('third')
+}
+
+function pacRun_1 () {
+    $('.c-pacman').removeClass('second').removeClass('third');
+}
+
+function pacRun_2 () {
+    $('.c-pacman').removeClass('second').removeClass('third');
+    $('.c-pacman').addClass('second')
+}
+
+function pacRun_3 () {
+    $('.c-pacman').removeClass('second').removeClass('third');
+    $('.c-pacman').addClass('third')
+}
+
+function pinkyRun_1 () {
+    $('.pinky').removeClass('second');
+}
+
+function pinkyRun_2 () {
+    $('.pinky').addClass('second')
 }
 
 

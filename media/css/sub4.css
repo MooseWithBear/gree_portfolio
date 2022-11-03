@@ -11,7 +11,8 @@
     /* -webkit-text-stroke:1px #000; */
 }
 #content h3{text-align:  center;}
-
+.logo {display: flex; justify-content: center;align-items: center;}
+.logo img {width: 80%; position: absolute; top: 30%;} 
 .subGallery {height: auto; }
 .subGallery .grid-image-item {}
 .subGallery .grid-image-item img:nth-child(2) {display: none;}
