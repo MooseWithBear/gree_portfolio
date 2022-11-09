@@ -28,6 +28,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover { color: #ffc800;}
 
 /* !footer */
+#footerArea {padding: 0.5% 0 3% 0;}
 .footer .footer-menu .title { position: relative; font-size: 21px }
 .footer .footer-menu ul { margin: 0; padding: 0 }
 .footer .footer-menu li { margin-bottom: 10px }
@@ -38,16 +39,21 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 .footer a { color: gray }
 .footer a:hover { color: gray }
 #footerArea ul { display: flex; flex-direction: row;}
+.quicktop{position:fixed; right: 3rem; bottom:3rem; z-index: 99; display: none;}
+.quicktop a{display: block; width:4.375rem; height:4.375rem; border-radius:.75rem; background:url(../images/top.png) 50% 0 no-repeat #ffba00; background-size:100% auto; text-indent:-9999%; font-size: 0; overflow: hidden; transition:all .5s;}
 
 
 /* !visual */
 .visual img {height: 1000px; object-fit: cover; object-position: 70% 50%;}
 .carousel-caption {left: 15%; top: 30%;}
 .carousel-caption p:nth-of-type(1) {font-size: 4.5vw; text-align: left;}
-.carousel-caption p:nth-of-type(2) {font-size: 2vw; text-align: left; width: 50%; justify-content: justify; word-break: break-all;}
+.carousel-caption p:nth-of-type(2) {font-size: 2vw; text-align: left; width: 50%; text-align: justify; word-break: break-all;}
 .img-responsive {display: block;max-width: 100%;height: auto;}
 
 
+@media(hover:hover){
+  .quicktop a:hover{background-position:50% 100%;}
+}
 
 
 
@@ -55,8 +61,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 #forest, #ambition {padding: 5% 0;}
 section {margin: 5vw 0;}
 #forest h4,#action h4, #coral dt, #ambition h4, #species h4, .visual p:nth-of-type(1) 
-{font-family:'Bebas Neue', cursive; letter-spacing: 0.08rem; font-size: 4vw; padding-top: 1rem; padding-bottom: 1rem;}
-
+{font-family:'Bebas Neue', cursive; letter-spacing: 0.07rem; font-size: 4vw; padding-top: 1rem; padding-bottom: 1rem;}
+#content img:hover {transform: scale(1.09); transition: all 0.3s ease-out;}
+#content img {transition: all 0.3s ease-out;}
 
 /* !forest */
 #forest h4, #ambition h4 {font-size: 3.4vw;  }
@@ -64,17 +71,23 @@ section {margin: 5vw 0;}
 #forest .forest_imgbox {display: flex; justify-content: flex-end;}
 
 /* !action */
-#action a {position: absolute; bottom: 0; right: 0;}
+/* #action a {position: absolute; bottom: 0; right: 0;} */
 .action {box-sizing: border-box;}
-.action img {height: 15rem; object-fit: cover;}
-
-
+.action img {height: 20rem; object-fit: cover;}
+#action .card-body {display: flex; flex-direction: column; justify-content: space-between;}
+#action .card-body a {margin-top: 1rem;  }
+#action .card {padding: 0;}
+#action .card-text {text-align: justify; word-break: break-all;}
 /* !coral */
 .coral {height: 20rem; background: url(../images/coral.jpg)0 70% no-repeat fixed; background-size: cover;}
 
 /* !species */
+#species button {color: #000;}
+#species button.active {color: #ffc800;}
 #species p {text-align: center; font-weight: 700;}
-.species .backgr {height: 22vw;}
+.species .backgr {height: 22vw; transition: all 0.3s ease-out;}
+
+#species .backgr:hover {transform: scale(1.09); transition: all 0.3s ease-out;}
 
 /* !our ambition */
 
@@ -87,14 +100,13 @@ section {margin: 5vw 0;}
 @media (prefers-reduced-motion: reduce) { .fade { transition: none; } }
 @media (max-width: 1399.98px) {
   .modal-fullscreen-xxl-down { width: 100vw; max-width: none; height: 100%; margin: 0; }
-  #portfolio .portfolio-item .portfolio-link { position: relative; display: block; margin: 0 auto; }
   .modal-fullscreen-xxl-down .modal-content { height: 100%; border: 0; border-radius: 0; }
   .modal-fullscreen-xxl-down .modal-header { border-radius: 0; }
   .modal-fullscreen-xxl-down .modal-body { overflow-y: auto; }
   .modal-fullscreen-xxl-down .modal-footer { border-radius: 0; }
   #forest img {width: 90%;}
   #ambition img {width: 90%;}
-  .visual img:nth-of-type(1) {object-position: 30% 50%;}
+  .visual1 img {object-position: 30% 50%;}
 
 }
 
@@ -108,8 +120,9 @@ section {margin: 5vw 0;}
   #forest p {order: 3;}
   #forest img {width: 90%;}
   #ambition img {width: 90%;}
-  .visual img:nth-of-type(1) {object-position: 50% 50%;}
-
+  .visual1 img {object-position: 50% 50%;}
+  .visual2 img {object-position: 70% 50%;}
+  .visual3 img {object-position: 60% 50%;}
 }
 
 /*! 테블릿 */
@@ -125,6 +138,10 @@ section {margin: 5vw 0;}
 #forest img {width: 100%;}
 #ambition img {width: 100%;}
 #forest h4,#action h4, #ambition h4, #species h4 {text-align: center;}
+.action img {height: 15rem; object-fit: cover;}
+  #footerArea .terms {justify-content: space-between; padding-right: 0; }
+  #footerArea .copr {padding-right: 0;}
+  .modal.fade.show .modal-dialog{padding-left: 0.5rem; padding-right: 0.5rem;}
 
 
 }
@@ -139,10 +156,15 @@ section {margin: 5vw 0;}
   .modal-fullscreen-md-down .modal-header { border-radius: 0; }
   .modal-fullscreen-md-down .modal-body { overflow-y: auto; }
   .modal-fullscreen-md-down .modal-footer { border-radius: 0; }
+  #content h4 {font-size: 2rem;}
+  .visual img {height: 800px;}
+
 }
 
 /*! 모바일 */
 @media screen and (max-width:640px) {
+  #footerArea .copr ,#footerArea .terms {font-size: .875rem; }
+  .modal.fade.show .modal-dialog {padding-left: 0rem; padding-right: 0rem;}
 }
 
 

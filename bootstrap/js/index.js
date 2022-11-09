@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 window.addEventListener("DOMContentLoaded", (event) => {
   // Navbar shrink function
   var navbarShrink = function () {
@@ -41,17 +43,27 @@ window.addEventListener("DOMContentLoaded", (event) => {
   });
 });
 
+const all = function () {
+  var windowWidth = $( window ).width();
+  var len = $("#species .nav-item").length-1
 
+  if(windowWidth<990) {
+    $("#species .tab-pane").removeClass("active");
+    $("#species .tab-pane:eq(0)").addClass("active");
+    $("#species .nav-link").removeClass("active")
+    $("#species .nav-link:eq(0)").addClass("active")
+
+  }else{
+    $("#species .tab-pane").addClass("active");
+    $("#species .nav-link").removeClass("active")
+    $("#species .nav-link:eq("+len+")").addClass("active")
+
+  }
+}
+all();
 $( window ).resize(function() {
   //창크기 변화 감지
-  var windowWidth = $( window ).width();
-
-if(windowWidth<990) {
-  $("#species .tab-pane").removeClass("active");
-  $("#species .tab-pane:eq(0)").addClass("active");
-}else{
-  $("#species .tab-pane").addClass("active");
-}
+all();
 });
 
 $("#species .nav-item").click(function () {
@@ -69,4 +81,24 @@ $("#all-tab").on("click", function () {
   $("#all-tab").parent().addClass("active");
   $(".tab-pane").addClass("active in");
   $('[data-toggle="tab"]').parent().removeClass("active");
+});
+})
+
+
+$(document).scroll(function(){
+  var scrollFoot = $('#footerArea').offset().top - $(window).height() + 60; // 푸터에서의 값 계산
+  var scrollTop = $(window).scrollTop();
+  var screenHeight = $(window).height();
+  var scroll = $(window).scrollTop(); //스크롤의 거리
+
+  if(scroll > 300){ // 300이상의 거리가 발생되면
+    $('.quicktop').fadeIn('slow');  // top 보이기
+
+    if(scroll < scrollFoot){ // footer보다 작으면 bottom:20, fixed
+        $('.quicktop').css('bottom',20).css('position','fixed');
+    } else { // footer보다 크면 bottom:200, absolute
+        $('.quicktop').css('bottom',300).css('position','absolute');
+    };
+
+  }
 });
