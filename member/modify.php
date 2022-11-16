@@ -14,7 +14,7 @@
 
     $regist_day = date("Y-m-d (H:i)");  // 현재의 '년-월-일-시-분'을 저장
 
-    include "../lib/dbconn.php";       // dconn.php 파일을 불러옴
+    include "../lib/dbconnect.php";       // dconn.php 파일을 불러옴
 
     $sql = "update member set pass=password('$pass'), name='$name' , ";
     $sql .= "nick='$nick', hp='$hp', email='$email', regist_day='$regist_day' where id='$userid'";

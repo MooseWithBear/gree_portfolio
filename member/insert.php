@@ -16,7 +16,7 @@ email1, email2
    $regist_day = date("Y-m-d (H:i)");  // 현재의 '년-월-일-시-분'을 저장
    $ip = $REMOTE_ADDR;         // 방문자의 IP 주소를 저장
 
-   include "../lib/dbconn.php";       // dconn.php 파일을 불러옴
+   include "../lib/dbconnect.php";       // dconn.php 파일을 불러옴
 
    $sql = "select * from member where id='$id'";
    $result = mysql_query($sql, $connect);

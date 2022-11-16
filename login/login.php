@@ -35,7 +35,7 @@
     }
 
  
-    include "../lib/dbconn.php";    // DB연결
+    include "../lib/dbconnect.php";    // DB연결
 
     $sql = "select * from member where id='$id'";   //id 검색 sql문
     $result = mysql_query($sql, $connect);

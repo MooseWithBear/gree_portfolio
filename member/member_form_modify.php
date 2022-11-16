@@ -153,7 +153,7 @@
 <?
     //$userid='green';
 
-    include "../lib/dbconn.php";
+    include "../lib/dbconnect.php";
 
     $sql = "select * from member where id='$userid'";
     $result = mysql_query($sql, $connect);

@@ -46,7 +46,7 @@
     }
 
 
-    include "../lib/dbconn.php";
+    include "../lib/dbconnect.php";
 
     $sql = "select * from member where id='$id'";
     $result = mysql_query($sql, $connect); //있으면 1, 없으면 null

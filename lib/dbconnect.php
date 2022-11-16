@@ -1,0 +1,8 @@
+
+<!-- localhost 전용 db접속 -->
+<?
+    $connect=mysql_connect( "localhost", "ssk", "1234") or  
+        die( "SQL server에 연결할 수 없습니다."); 
+
+    mysql_select_db("ssk_db",$connect);
+?>

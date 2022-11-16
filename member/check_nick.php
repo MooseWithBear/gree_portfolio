@@ -12,7 +12,7 @@
    }
    else
    {
-      include "../lib/dbconn.php";
+      include "../lib/dbconnect.php";
  
       $sql = "select * from member where nick='$nick' ";
 
