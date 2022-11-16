@@ -70,9 +70,19 @@
         <!-- 로그인 회원가입 -->
         <div class="topMenu">
           <ul>
-            <li><a href="#">로그인</a></li>
-            <li><a href="./member/join.html">회원가입</a></li>
+            <? if(!$userid){ ?>
+
+              <li><a href="./login/login_form.php">로그인</a></li>
+              <li><a href="./member/join.html">회원가입</a></li>
+
+            <? } else { ?>
+
+            <li><a href="./login/logout.php">로그아웃</a></li>
+            <li><a href="./member/member_form_modify.php">회원정보수정</a></li>
+            <? } ?>
+
           </ul>
+
         </div>
       </div>
     </header>
