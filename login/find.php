@@ -35,7 +35,7 @@
     }
 
 
-    include "../lib/dbconn.php";    // DB연결
+    include "../lib/dbconnect.php";    // DB연결
 
     $sql = "select * from member where name='$name'";  //이름으로 검색
     $result = mysql_query($sql, $connect); //있으면 1, 없으면 null
