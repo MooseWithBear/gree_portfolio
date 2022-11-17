@@ -15,6 +15,7 @@
     */
 
     if(!$name) {  /* !='없으면'*/
+
         echo("
             <script>
                 window.alert('이름을 입력하세요');
@@ -25,8 +26,10 @@
     }
 
     if(!($hp2 && $hp3)) {
+
         echo("
             <script>
+
                 window.alert('연락처를 입력하세요');
                 //history.go(-1);
             </script>
@@ -55,6 +58,7 @@
     }
     else    //검색 레코드가 있으면  
     {
+ 
         $hp = $hp1."-".$hp2."-".$hp3;  // 010-1111-2222 DB안에 저장된 포멧으로 변경
 
         $row = mysql_fetch_array($result); 

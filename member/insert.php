@@ -1,6 +1,8 @@
 <meta charset="utf-8">
 <?
   @extract($_POST);
+  @extract($_GET);
+  @extract($_SESSION);
   /*
 id
 pass
@@ -43,7 +45,7 @@ email1, email2
    echo "
 	   <script>
       alert('회원가입 처리가 완료되었습니다.');
-	    location.href = '../index.html';
+	    location.href = '../login/login_form.php';
 	   </script>
 	";
 ?>
