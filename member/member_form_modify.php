@@ -191,7 +191,7 @@ mysql_close();
                             <label for="id" class="block mb-2 text-sm font-medium text-gray-900 ">아이디</label>
                             <input type="text" name="id" id="id"
                                 class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:none focus:border-blue-600 block w-full p-2.5"
-                                value="<?= $row[id] ?>" readonly>
+                                value="<?= $row[id] ?>" disabled>
                             <span id="loadtext"></span>
                         </div>
                         <div>
@@ -212,7 +212,7 @@ mysql_close();
                             <label for="name" class="block mb-2 text-sm font-medium text-gray-900 ">이름</label>
                             <input type="text" name="name" id="name"
                                 class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 "
-                                value="<?= $row[name] ?>" readonly>
+                                value="<?= $row[name] ?>" required>
                         </div>
                         <div>
                             <label for="nick" class="block mb-2 text-sm font-medium text-gray-900 ">닉네임</label>

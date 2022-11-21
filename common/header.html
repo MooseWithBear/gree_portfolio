@@ -1,6 +1,11 @@
 <!-- 헤더 공통 요소 -->
 
-
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
 <div id="skipNav">
     <a href="#content">본문바로가기</a>
     <a href="#gnb">글로벌네비게이션바</a>
@@ -43,10 +48,10 @@
               </ul>
             </li>
             <li class="m4 menu">
-              <h3><a class="depth1"  href="./sub4/sub4_1.html">홍보센터</a></h3>
+              <h3><a class="depth1"  href="./greet/list.php">홍보센터</a></h3>
               <ul>
-                <li><a href="./sub4/sub4_1.html">GS파워소식</a></li>
-                <li><a href="./sub4/sub4_2.html">GS파워홍보실</a></li>
+                <li><a href="./greet/list.php">공지사항</a></li>
+                <li><a href="./sub4/sub4_2.html">홍보실</a></li>
               </ul>
             </li>
             <li class="m5 menu">

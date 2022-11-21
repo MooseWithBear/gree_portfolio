@@ -87,7 +87,7 @@
 
             echo("
                 <script>
-                    alert('{$userid}님 로그인이 되었습니다.');
+                    alert('{$usernick}님 로그인 되었습니다.');
                     location.href = '../index.html';
                 </script>
             ");

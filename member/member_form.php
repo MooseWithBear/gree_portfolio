@@ -213,11 +213,11 @@ error_reporting(E_ALL);
                                 </select>
                                 <label class="hidden" for="hp2">전화번호중간4자리</label>
                                 <input
-                                    class=" bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-1/3 p-2.5 "
+                                    class=" bg-gray-50 text-center border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-1/3 p-2.5 "
                                     type="text" class="hp" name="hp2" id="hp2" required>
                                 <label class="hidden" for="hp3">전화번호끝4자리</label>
                                 <input
-                                    class=" bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-1/3 p-2.5 "
+                                    class=" bg-gray-50 text-center border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-1/3 p-2.5 "
                                     type="text" class="hp" name="hp3" id="hp3" required>
 
                             </div>
