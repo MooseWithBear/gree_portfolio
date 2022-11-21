@@ -37,12 +37,16 @@ $('.cycleWrap li:eq(0) a').addClass('galleryActive');
         var cnt = 0; //이미지 순서를 반복실행하기 위한 인덱스
         function 교체() {
             
-            $('.gallery').removeClass('gallery0');
             $('.gallery').removeClass('gallery'+cnt);
+
             cnt++;
+            $('.gallery').addClass('gallery'+(cnt))
+
             if(cnt==4){
                 cnt=0;
             }
+            $('.gallery').addClass('gallery'+(cnt))
+
             $('.cycleWrap li a').removeClass('galleryActive');
             $('.cycleWrap li:eq('+cnt+') a').addClass('galleryActive');
 
@@ -53,8 +57,8 @@ $('.cycleWrap li:eq(0) a').addClass('galleryActive');
             $('.slogan').fadeIn('slow').animate({top:400},1000);
 
 
-            $('.gallery').removeClass('gallery0');
-            $('.gallery').removeClass('gallery'+cnt);
+            // $('.gallery').removeClass('gallery0');
+            // $('.gallery').removeClass('gallery'+cnt);
             
         }
         

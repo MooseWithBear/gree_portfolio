@@ -79,7 +79,7 @@
 
 	echo "
 	<script>
-		location.href = 'list.php?page=$page';
+		location.href = 'list.php?page=$page#noticeJump';
 	</script>
 	";
 	

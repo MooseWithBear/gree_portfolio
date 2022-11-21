@@ -14,17 +14,17 @@ $result = mysql_query($sql, $connect);
 
 $row = mysql_fetch_array($result); //하나의 레코드 가져오기    
 
-$item_num = $row[num];
-$item_id = $row[id];
-$item_name = $row[name];
-$item_nick = $row[nick];
-$item_hit = $row[hit];
-$item_date = $row[regist_day];
+$item_num = $row["num"];
+$item_id = $row["id"];
+$item_name = $row["name"];
+$item_nick = $row["nick"];
+$item_hit = $row["hit"];
+$item_date = $row["regist_day"];
 $item_date = substr($item_date, 0, 10);
 
-$item_subject = str_replace(" ", "&nbsp;", $row[subject]);
-$item_content = $row[content];
-$is_html = $row[is_html];
+$item_subject = str_replace(" ", "&nbsp;", $row["subject"]);
+$item_content = $row["content"];
+$is_html = $row["is_html"];
 
 if ($is_html != "y") {
 	$item_content = str_replace(" ", "&nbsp;", $item_content);
@@ -94,13 +94,39 @@ mysql_query($sql, $connect);
 			<div class="subSlogan">
 				<p>패러다임 변화를 주도하는 에너지 기업</p>
 				<p>“친환경 전력을 생산하는 GS의 기술 혁신이 친환경 미래 세상을 앞당기고 있습니다.</p>
-				<p>GS파워는 미래 세대에게 물려줄 선물인 지구를 가꾸고 보전하는 일에 최선을 다하겠습니다.”</p>
+				<p id="noticeJump">GS파워는 미래 세대에게 물려줄 선물인 지구를 가꾸고 보전하는 일에 최선을 다하겠습니다.”</p>
 			</div>
 
-			<section class="notice">
+			<section  class="notice">
 				<h3>Notice View</h3>
 
+<ul class="moveBox">
+	<?
+	//이전글 다음글 찾기
+	$next = "SELECT * FROM greet WHERE num > $item_num ORDER BY num ASC LIMIT 1";
+	$prev = "SELECT * FROM greet WHERE num < $item_num ORDER BY num DESC LIMIT 1";
+	$result1 = mysql_query($next, $connect);
+	$result2 = mysql_query($prev, $connect);
+	$rowNext = mysql_fetch_array($result1); //하나의 레코드 가져오기    
+	$rowPrev = mysql_fetch_array($result2); //하나의 레코드 가져오기    
+	$num_next = $rowNext["num"];
+	$num_prev = $rowPrev["num"];
+	if($num_next==0 && $num_prev==0 ) {
+		echo("
+		<script>
+		window.alert('마지막 글입니다.')
+		history.go(-1)
+		</script>
+		");
+		exit;
+	}
+    ?>
 
+	<li><a class="prev move" href="view.php?num=<?= $num_prev ?>#noticeJump"><i class="fa-solid fa-caret-left"></i> 이전글 </a></li>
+
+	<li><a class="next move" href="view.php?num=<?= $num_next ?>#noticeJump"> 다음글 <i class="fa-solid fa-caret-right"></i></a></li>
+
+</ul>
 
 				<form name="view_form" class="view_form">
 				<div id="view_title3">
@@ -142,11 +168,11 @@ mysql_query($sql, $connect);
 
 					<div class="view_gbtn">
 						<ul class="btn_wrap btn_wrap2 btn_list">
-							<li><a href="list.php?page=<?= $page ?>" class="btn btn1">목록</a></li>
+							<li><a href="list.php?page=<?= $page ?>#noticeJump" class="btn btn1">목록</a></li>
 							<?
                     if ($userlevel == 1 || $userid == "GS POWER") {
                     ?>
-							<li><a class="btn btn3" href="modify_form.php?num=<?= $num ?>&page=<?= $page ?>" >수정</a></li>
+							<li><a class="btn btn2" href="modify_form.php?num=<?= $num ?>&page=<?= $page ?>#noticeJump" >수정</a></li>
 							<?
                     }
                     ?>

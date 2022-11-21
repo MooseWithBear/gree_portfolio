@@ -64,7 +64,7 @@ $item_content = $row[content];
 			<div class="subSlogan">
 				<p>패러다임 변화를 주도하는 에너지 기업</p>
 				<p>“친환경 전력을 생산하는 GS의 기술 혁신이 친환경 미래 세상을 앞당기고 있습니다.</p>
-				<p>GS파워는 미래 세대에게 물려줄 선물인 지구를 가꾸고 보전하는 일에 최선을 다하겠습니다.”</p>
+				<p id="noticeJump">GS파워는 미래 세대에게 물려줄 선물인 지구를 가꾸고 보전하는 일에 최선을 다하겠습니다.”</p>
 			</div>
 
 			<section class="notice">
@@ -97,8 +97,8 @@ $item_content = $row[content];
 
 					<div id="page_button">
 						<ul class="btn_wrap btn_wrap2">
-							<li><a href="list.php?page=<?= $page ?>" class="btn btn5">취소</a></li>
-							<li><button type="submit" value="등록" class="btn btn2"><span>수정</span></button></li>
+							<li><a href="list.php?page=<?= $page ?>#noticeJump" class="btn btn5">취소</a></li>
+							<li><a href="view.php?num=<?= $item_num ?>&page=<?= $page ?>#noticeJump"><button type="submit" value="등록" class="btn btn2"><span>수정</span></button></a></li>
 						</ul>
 					</div>
 				</form>

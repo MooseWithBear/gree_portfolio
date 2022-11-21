@@ -13,7 +13,7 @@
 
    echo "
 	   <script>
-	    location.href = 'list.php';
+	    location.href = 'list.php#noticeJump';
 	   </script>
 	";
 ?>

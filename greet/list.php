@@ -100,13 +100,13 @@ session_start();
 			<div class="subSlogan">
 				<p>패러다임 변화를 주도하는 에너지 기업</p>
 				<p>“친환경 전력을 생산하는 GS의 기술 혁신이 친환경 미래 세상을 앞당기고 있습니다.</p>
-				<p>GS파워는 미래 세대에게 물려줄 선물인 지구를 가꾸고 보전하는 일에 최선을 다하겠습니다.”</p>
+				<p id="noticeJump">GS파워는 미래 세대에게 물려줄 선물인 지구를 가꾸고 보전하는 일에 최선을 다하겠습니다.”</p>
 			</div>
 
 			<section class="notice">
 				<h3>NOTICE LIST</h3>
 				<div class="search">
-					<form name="board_form" method="post" action="list.php?mode=search" class="search_form">
+					<form name="board_form" method="post" action="list.php?mode=search#noticeJump" class="search_form">
 						<div id="list_search">
 							<div id="list_search1">
 								<label class="hidden" for="find">검색 카테고리</label>
@@ -118,13 +118,13 @@ session_start();
 								</select>
 							</div>
 							<div id="list_search2">
-								<input type="text" name="search" id="search" value="<?= $search ?>"
+								<input  type="text" name="search" id="search" value="<?= $search ?>"
 									placeholder="검색어를 입력해주세요.">
 							</div>
 							<ul id="list_search3" class="btn_wrap btn_wrap2">
 								<li><button type="submit" value="검색" class="btn btn1">검색</button></li>
-								<li><button type="button" value="검색" class="btn btn3"
-										onclick="location.href='list.php'">초기화</button></li>
+								<li><button id="reset" type="reset" value="검색" class="btn btn3"
+								onclick="location.href='list.php#noticeJump'">초기화</button></li>
 							</ul>
 						</div>
 					</form>
@@ -158,7 +158,7 @@ session_start();
 							<th scope="col" id="list_title2">제목</th>
 							<th scope="col" id="list_title3">작성자</th>
 							<th scope="col" id="list_title4">등록일</th>
-							<th scope="col" id="list_title5">조회</th>
+							<th scope="col" id="list_title5">조회수</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -179,7 +179,7 @@ session_start();
 							<td class="list_item1">
 								<?= $number ?>
 							</td>
-							<td class="list_item2"> <a href="view.php?num=<?= $item_num ?>&page=<?= $page ?>">
+							<td class="list_item2"> <a href="view.php?num=<?= $item_num ?>&page=<?= $page ?>#noticeJump">
 									<?= $item_subject ?>
 								</a> </td>
 							<td class="list_item3">
@@ -207,11 +207,11 @@ session_start();
 				<div id="page_button">
 					<!-- 목록/글쓰기 버튼 -->
 					<ul class="btn_wrap btn_wrap2 btn_write">
-						<li><a href="list.php" class="btn btn1">목록</a></li>
+						<li><a href="list.php#noticeJump" class="btn btn1">목록</a></li>
 						<?
                         if ($userlevel == 1 || $userid == "GS POWER") {
                         ?>
-						<li><a href="write_form.php" class="btn btn3">글쓰기</a></li>
+						<li><a href="write_form.php#noticeJump" class="btn btn3">글쓰기</a></li>
 
 						<?
                         }
@@ -229,10 +229,10 @@ session_start();
 	                        } else {
 		                        if ($mode == "search") //검색했을때
                         		{
-			                        echo "<a href='list.php?page=$i&scale=$scale&mode=search&find=$find&search=$search'> $i </a>"; //3페이지 번호랑 스케일, 검색 값을 다 넘겨줌
+			                        echo "<a href='list.php?page=$i&scale=$scale&mode=search&find=$find&search=$search#noticeJump'> $i </a>"; //3페이지 번호랑 스케일, 검색 값을 다 넘겨줌
                         		} else //검색 안했을때
                         		{
-			                        echo "<a href='list.php?page=$i&scale=$scale'> $i </a>"; //페이지 번호랑 스케일만 넘겨줌
+			                        echo "<a href='list.php?page=$i&scale=$scale#noticeJump'> $i </a>"; //페이지 번호랑 스케일만 넘겨줌
                         		}
 	                        }
                         }
@@ -246,6 +246,18 @@ session_start();
 		</div>
 	</article>
 	<? include "../sub1/common/sub_footer.html" ?>
+	<script>
+		let resetValue = document.getElementById('search')
+		let resetBtn = document.getElementById('reset')
+		function reset () {
+			resetBtn.addEventListener('click', function () {
+				resetValue.reset();
+			})
+		}	
+		
+		
+		
+	</script>
 </body>
 
 </html>
