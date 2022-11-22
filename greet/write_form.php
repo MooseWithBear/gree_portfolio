@@ -33,7 +33,7 @@
 <div class="subNav">
 	<ul>
 		<li class="current"><a href="../greet/list.php">공지사항</a></li>
-		<li><a href="../sub4/sub4_2.html">홍보실</a></li>
+		<li><a href="../concert/list.php">홍보실</a></li>
 	</ul>
 </div>
 <article id="content">

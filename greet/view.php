@@ -76,7 +76,7 @@ mysql_query($sql, $connect);
 	<div class="subNav">
 		<ul>
 			<li class="current"><a href="../greet/list.php">공지사항</a></li>
-			<li><a href="../sub4/sub4_2.html">홍보실</a></li>
+			<li><a href="../concert/list.php">홍보실</a></li>
 		</ul>
 	</div>
 	<article id="content">
@@ -97,50 +97,49 @@ mysql_query($sql, $connect);
 				<p id="noticeJump">GS파워는 미래 세대에게 물려줄 선물인 지구를 가꾸고 보전하는 일에 최선을 다하겠습니다.”</p>
 			</div>
 
-			<section  class="notice">
+			<section class="notice">
 				<h3>Notice View</h3>
 
-<ul class="moveBox">
-	<?
-	//이전글 다음글 찾기
-	$next = "SELECT * FROM greet WHERE num > $item_num ORDER BY num ASC LIMIT 1";
-	$prev = "SELECT * FROM greet WHERE num < $item_num ORDER BY num DESC LIMIT 1";
-	$result1 = mysql_query($next, $connect);
-	$result2 = mysql_query($prev, $connect);
-	$rowNext = mysql_fetch_array($result1); //하나의 레코드 가져오기    
-	$rowPrev = mysql_fetch_array($result2); //하나의 레코드 가져오기    
-	$num_next = $rowNext["num"];
-	$num_prev = $rowPrev["num"];
-	if($num_next==0 && $num_prev==0 ) {
-		echo("
+				<ul class="moveBox">
+					<?
+    //이전글 다음글 찾기
+    $next = "SELECT * FROM greet WHERE num > $item_num ORDER BY num ASC LIMIT 1";
+    $prev = "SELECT * FROM greet WHERE num < $item_num ORDER BY num DESC LIMIT 1";
+    $result1 = mysql_query($next, $connect);
+    $result2 = mysql_query($prev, $connect);
+    $rowNext = mysql_fetch_array($result1); //하나의 레코드 가져오기    
+    $rowPrev = mysql_fetch_array($result2); //하나의 레코드 가져오기    
+    $num_next = $rowNext["num"];
+    $num_prev = $rowPrev["num"];
+    if ($num_next == 0 && $num_prev == 0) {
+	    echo ("
 		<script>
 		window.alert('마지막 글입니다.')
 		history.go(-1)
 		</script>
 		");
-		exit;
-	}
+	    exit;
+    }
     ?>
-
-	<li><a class="prev move" href="view.php?num=<?= $num_prev ?>#noticeJump"><i class="fa-solid fa-caret-left"></i> 이전글 </a></li>
-
-	<li><a class="next move" href="view.php?num=<?= $num_next ?>#noticeJump"> 다음글 <i class="fa-solid fa-caret-right"></i></a></li>
-
-</ul>
+					<li><a class="prev move" href="view.php?num=<?= $num_prev ?>#noticeJump"><i
+								class="fa-solid fa-caret-left"></i> 이전글 </a></li>
+					<li><a class="next move" href="view.php?num=<?= $num_next ?>#noticeJump"> 다음글 <i
+								class="fa-solid fa-caret-right"></i></a></li>
+				</ul>
 
 				<form name="view_form" class="view_form">
-				<div id="view_title3">
-							<ul class="btn_wrap btn_wrap2">
-								<?
-                        if ($userlevel == 1 || $userid == "GS POWER") {
-                        ?>
+					<div id="view_title3">
+						<ul class="btn_wrap btn_wrap2">
+							<?
+                                if ($userlevel == 1 || $userid == "GS POWER") {
+                                ?>
 							<!-- <li><a href="write_form.php" >글쓰기</a></li> -->
-								<li><a class="del" href="javascript:del('delete.php?num=<?= $num ?>')" >삭제</a></li>
-								<?
-                        }
-                        ?>
-							</ul>
-						</div>
+							<li><a class="del" href="javascript:del('delete.php?num=<?= $num ?>')">삭제</a></li>
+							<?
+                                }
+                                ?>
+						</ul>
+					</div>
 
 					<div class="view_title">
 						<div id="view_title1">
@@ -149,10 +148,11 @@ mysql_query($sql, $connect);
 						<div id="view_title2">
 							<ul>
 								<li>
-									작성자 : <?= $item_nick ?>
+									<?= $item_nick ?>
 								</li>
-								<li><i style="margin-right: 10px;" class="fa-regular fa-eye"></i><span class="hidden">조회</span>
-									 <?= $item_hit ?>
+								<li><i style="margin-right: 10px;" class="fa-regular fa-eye"></i><span
+										class="hidden">조회</span>
+									<?= $item_hit ?>
 								</li>
 								<li>
 									<?= $item_date ?>
@@ -170,12 +170,13 @@ mysql_query($sql, $connect);
 						<ul class="btn_wrap btn_wrap2 btn_list">
 							<li><a href="list.php?page=<?= $page ?>#noticeJump" class="btn btn1">목록</a></li>
 							<?
-                    if ($userlevel == 1 || $userid == "GS POWER") {
-                    ?>
-							<li><a class="btn btn2" href="modify_form.php?num=<?= $num ?>&page=<?= $page ?>#noticeJump" >수정</a></li>
+                            if ($userlevel == 1 || $userid == "GS POWER") {
+                            ?>
+							<li><a class="btn btn2"
+									href="modify_form.php?num=<?= $num ?>&page=<?= $page ?>#noticeJump">수정</a></li>
 							<?
-                    }
-                    ?>
+                            }
+                            ?>
 						</ul>
 					</div>
 

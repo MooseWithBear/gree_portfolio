@@ -22,7 +22,6 @@ select::-ms-expand {display: none;}
 .btn_wrap{overflow: hidden; text-align: center;}
 .btn{display: inline-block; width: -webkit-fill-available; padding: 15px 0 16px; border-radius: 4px; border: 1px solid #1979bd; box-sizing: border-box; position: relative;
     font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 1em; text-align: center; cursor:pointer; overflow: hidden;}
-
 .btn_wrap .btn1{color: #000; background: #fff; width: 120px; border-color: #000;}
 .btn_wrap .btn2{color: #fff; background: #17a34a; width: 120px; border-color: #17a34a;}
 .btn_wrap .btn3{color: #fff; background: #3c82f6; width: 120px; border-color: #3c82f6;}
@@ -100,10 +99,10 @@ tbody tr:hover{background: rgba(25, 121, 189, .1);}
 #view_title3 a {padding:10px 10px;}
 #view_title3 a:hover {color:red}
 
-#view_content{margin: 80px 0; font-size: 1.125em; min-height: 500px;}
+#view_content{margin: 80px 0; font-size: 1.125em; min-height: 500px; display: flex; flex-direction: column; text-align: justify;}
+#view_content img {justify-self: center;}
 .view_form .btn_wrap{margin-top: 0;}
 .view_form .view_gbtn{margin-top: 0; padding: 56px 0; border-top: 1px solid #ececec; display: flex; justify-content: flex-end;}
-#view_content{text-align: start;}
 
 
 

@@ -90,7 +90,7 @@ else if(scroll>h4){
 $('.contentTab a').each(function (index) {
     $(this).click(function(e) {
         e.preventDefault();
-        console.log(index)
+      //   console.log(index)
         $('.contentTab li').removeClass('current');
         $('.contentTab li:eq('+index+')').addClass('current');
         offset = $('.yearsBigBox .yearBox:eq('+index+')').offset(); 

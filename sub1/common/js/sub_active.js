@@ -30,13 +30,13 @@ if(h3_4.length) {
     h3_4 = $("#content h3:eq(3)").offset().top - gap;
 }
 
-    console.log('main : '+main);
-    console.log('subSlogan : '+subSlogan);
-    console.log('h3_1 : '+h3_1);
-    console.log('h3_2 : '+h3_2);
-    console.log('h3_3 : '+h3_3);
-    console.log('h3_4 : '+h3_4);
-    console.log('현재 : '+ now)
+    // console.log('main : '+main);
+    // console.log('subSlogan : '+subSlogan);
+    // console.log('h3_1 : '+h3_1);
+    // console.log('h3_2 : '+h3_2);
+    // console.log('h3_3 : '+h3_3);
+    // console.log('h3_4 : '+h3_4);
+    // console.log('현재 : '+ now)
 
 
   
