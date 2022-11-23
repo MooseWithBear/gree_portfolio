@@ -14,7 +14,7 @@ $(window).on("scroll", function () {
   var news = $(".news").offset().top - gap;
   var promo = $(".promo").offset().top - gap;
 
-  console.log(blue);
+  // console.log(blue);
 
   if (now > grow) {
     $(".grow").addClass("active");

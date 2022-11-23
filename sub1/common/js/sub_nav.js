@@ -132,7 +132,7 @@ $(document).ready(function() {
     var smh= $('.main').height();  //메인 비주얼의 높이
     var h3 = $('.titleArea').offset().top-120;
 
-console.log(h3)
+// console.log(h3)
 
 
 

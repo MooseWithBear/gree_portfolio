@@ -7,19 +7,19 @@ $('.gallery li:eq(0)').fadeIn(2000);
 $('.main').addClass('active')
 
 $('.slogan01 strong>span').each(function(index){
-    console.log(index)
+    // console.log(index)
     $(this).css('animation-delay', (index*80)+'ms')
 })
 $('.slogan02 strong>span').each(function(index){
-    console.log(index)
+    // console.log(index)
     $(this).css('animation-delay', (index*40)+'ms')
 })
 $('.slogan03 strong>span').each(function(index){
-    console.log(index)
+    // console.log(index)
     $(this).css('animation-delay', (index*40)+'ms')
 })
 $('.slogan04 strong>span').each(function(index){
-    console.log(index)
+    // console.log(index)
     $(this).css('animation-delay', (index*40)+'ms')
 })
 
