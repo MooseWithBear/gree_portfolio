@@ -26,6 +26,8 @@ if ($mode == "modify") //수정 글쓰기면
 	$copied_file_1 = $row["file_copied_1"];
 	$copied_file_2 = $row["file_copied_2"];
 }
+
+
 ?>
 <!DOCTYPE html>
 <html lang="ko">
@@ -75,14 +77,34 @@ if ($mode == "modify") //수정 글쓰기면
 	<? include "../sub1/common/sub_header.html" ?>
 
 	<div class="main">
-		<h3>홍보실</h3>
+		<div class="g-wrap">
+			<div class="starsCopy"></div>
+			<div class="starsCopy"></div>
+			<div class="starsCopy"></div>
+			<div class="starsCopy"></div>
+			<div class="starsCopy"></div>
+
+			<div class="g-aurora"></div>
+		</div>
+
+
+		<svg id='blob' version='1.1' xmlns='http://www.w3.org/2000/svg'>
+			<defs>
+				<filter id='wave'>
+					<feturbulence basefrequency='0.00510 0.00099' id='turbulence' numoctaves='3' result='noise'
+						seed='10' />
+					<fedisplacementmap id='displacement' in2='noise' in='SourceGraphic' scale='96' />
+				</filter>
+			</defs>
+		</svg>
+		<h3>홍보센터</h3>
 
 	</div>
 
 	<div class="subNav">
 		<ul>
-			<li><a href="../greet/list.php">공지사항</a></li>
-			<li class="current"><a href="../concert/list.php">홍보실</a></li>
+			<li><a href="../greet/list.php#noticeJump">공지사항</a></li>
+			<li class="current"><a href="../concert/list.php#prJump">홍보실</a></li>
 		</ul>
 	</div>
 	<article id="content">
@@ -217,6 +239,27 @@ if ($mode == "modify") //수정 글쓰기면
 	</article>
 
 	<? include "../sub1/common/sub_footer.html" ?>
+	<script>
+			//reference --https://segmentfault.com/a/1190000041166007/en
+
+			var filter = document.querySelector("#turbulence");
+		var frames = 0;
+		var rad = Math.PI / 180;
+
+		function freqAnimation() {
+			bfx = 0.005;
+			bfy = 0.005;
+			frames += .2
+			bfx += 0.0025 * Math.cos(frames * rad);
+			bfy += 0.0025 * Math.sin(frames * rad);
+
+			bf = bfx.toString() + ' ' + bfy.toString();
+			filter.setAttributeNS(null, 'baseFrequency', bf);
+			window.requestAnimationFrame(freqAnimation);
+		}
+
+		window.requestAnimationFrame(freqAnimation);
+	</script>
 </body>
 
 </html>

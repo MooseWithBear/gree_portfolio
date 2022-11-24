@@ -360,6 +360,7 @@
         </div>
       </section>
 
+      <? include "./lib/func.php"; ?> 
 
       <!-- 섹션3-1 시작 -->
       <section class="promo">
@@ -368,6 +369,8 @@
 <div class="galleryBox">
   
             <ul class="promoGallery">
+              <? latest_article("concert",10, 100); ?>
+<!-- 
               <li><div><a href="#"></a></div> <span><a href="#">GS 지속가능경영보고서 발행</a></span></li>
               <li><div><a href="#"></a></div> <span><a href="#">GS에너지, 친환경 암모니아 공급</a> </span></li>
               <li><div><a href="#"></a></div> <span><a href="#">GS와 포스코의 친환경 신사업 협력</a></span></li>
@@ -377,7 +380,7 @@
               <li><div><a href="#"></a></div> <span><a href="#">GS칼텍스 식물원료 기반 친환경 엔진오일 공개</a></span></li>
               <li><div><a href="#"></a></div> <span><a href="#">GS그룹, 강원 지역 산불 피해 복구 지원</a></span></li>
               <li><div><a href="#"></a></div> <span><a href="#">GS가 2030 세계박람회 부산 유치를 기원합니다</a></span></li>
-              <li><div><a href="#"></a></div> <span><a href="#">친환경/디지털 미래성장에 5년간 21조 투자</a></span></li>
+              <li><div><a href="#"></a></div> <span><a href="#">친환경/디지털 미래성장에 5년간 21조 투자</a></span></li> -->
             </ul>
             
 </div>
@@ -388,7 +391,7 @@
               </li>
             </ul>
             <div class="promoMore">
-              <a class="moretext promoMoreText" href="#">GS파워의 최신 소식 더보기 <i class="fa-solid fa-arrow-right"></i></a>
+              <a class="moretext promoMoreText" href="./concert/list.php#prJump">GS파워의 최신 소식 더보기 <i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -398,10 +401,12 @@
       <!-- 섹션3-2 시작 -->
       <section class="news">
         <div class="newInner">
-          <h3>뉴스센터</h3>
+          <h3>뉴스 및 공지센터</h3>
           <div class="newsBox">
             <ul>
-              <li><a href="#">
+             <? latest_article("greet", 2, 85); ?>
+
+              <!-- <li><a href="#">
                   <dl>
                     <dt>제26회 부천국제판타스틱영화제(BIFAN) 후원</dt>
                     <dd class="hovertext">GS파워는 2022년 7월 7일 ~ 7월 17일까지 11일간 열리는 부천국제판탁스틱영화제 (BIFAN)의 후원사(Diamond
@@ -418,11 +423,11 @@
                       <span class="hovertext">2022.07.07</span>
                     </dd>
                   </dl>
-                </a></li>
+                </a></li> -->
             </ul>
           </div>
           <div class="newsMore">
-            <a class="moretext newsMoreText" href="#">GS파워의 최신 소식 더보기 <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="moretext newsMoreText" href="./greet/list.php#noticeJump">GS파워의 최신 소식 더보기 <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </section>

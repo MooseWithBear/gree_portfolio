@@ -130,6 +130,6 @@ input[type=checkbox]:checked + label{
 .reply_content{font-size: 1.125em; line-height: 1.5em; margin-top: 4px;}
 .writer_content{padding: 20px 32px 16px 32px; background: #f8f8f8; position: relative;}
 #ripple_content{height: 120px; min-height: 84px;}
-.reply_form .btn.btn_solid{width: auto; background:#777; color: #fff; transition: all .5s; border: 1px solid; position: absolute; bottom: 36px; right: 46px; padding: 15px 24px 16px;}
+.reply_form .btn.btn_solid{width: auto; background:rgb(224, 223, 223); color: rgba(255, 255, 255, 0.804); transition: all .5s; border: 1px solid; position: absolute; bottom: 36px; right: 46px; padding: 15px 24px 16px;}
 .reply_form .btn:hover{background: #3c82f6; color: #fff;}
 .reply_form #rippleBtn.btnActive {background: #3c82f6; color: #fff;}

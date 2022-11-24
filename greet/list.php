@@ -75,14 +75,34 @@ session_start();
 
 
 	<div class="main">
+		<div class="g-wrap">
+			<div class="starsCopy"></div>
+			<div class="starsCopy"></div>
+			<div class="starsCopy"></div>
+			<div class="starsCopy"></div>
+			<div class="starsCopy"></div>
+
+			<div class="g-aurora"></div>
+		</div>
+
+
+		<svg id='blob' version='1.1' xmlns='http://www.w3.org/2000/svg'>
+			<defs>
+				<filter id='wave'>
+					<feturbulence basefrequency='0.00510 0.00099' id='turbulence' numoctaves='3' result='noise'
+						seed='10' />
+					<fedisplacementmap id='displacement' in2='noise' in='SourceGraphic' scale='96' />
+				</filter>
+			</defs>
+		</svg>
 		<h3>홍보센터</h3>
 
 	</div>
 
 	<div class="subNav">
 		<ul>
-			<li class="current"><a href="../greet/list.php">공지사항</a></li>
-			<li><a href="../concert/list.php">홍보실</a></li>
+			<li class="current"><a href="../greet/list.php#noticeJump">공지사항</a></li>
+			<li><a href="../concert/list.php#prJump">홍보실</a></li>
 		</ul>
 	</div>
 	<article id="content">
@@ -118,13 +138,13 @@ session_start();
 								</select>
 							</div>
 							<div id="list_search2">
-								<input  type="text" name="search" id="search" value="<?= $search ?>"
+								<input type="text" name="search" id="search" value="<?= $search ?>"
 									placeholder="검색어를 입력해주세요.">
 							</div>
 							<ul id="list_search3" class="btn_wrap btn_wrap2">
 								<li><button type="submit" value="검색" class="btn btn1">검색</button></li>
 								<li><button id="reset" type="reset" value="검색" class="btn btn3"
-								onclick="location.href='list.php#noticeJump'">초기화</button></li>
+										onclick="location.href='list.php#noticeJump'">초기화</button></li>
 							</ul>
 						</div>
 					</form>
@@ -179,7 +199,8 @@ session_start();
 							<td class="list_item1">
 								<?= $number ?>
 							</td>
-							<td class="list_item2"> <a href="view.php?num=<?= $item_num ?>&page=<?= $page ?>#noticeJump">
+							<td class="list_item2"> <a
+									href="view.php?num=<?= $item_num ?>&page=<?= $page ?>#noticeJump">
 									<?= $item_subject ?>
 								</a> </td>
 							<td class="list_item3">
@@ -249,21 +270,33 @@ session_start();
 	<script>
 		let resetValue = document.getElementById('search')
 		let resetBtn = document.getElementById('reset')
-		function reset () {
+		function reset() {
 			resetBtn.addEventListener('click', function () {
 				resetValue.reset();
 			})
-		}	
-		
-		
-		
+		}
+		//reference --https://segmentfault.com/a/1190000041166007/en
+
+		var filter = document.querySelector("#turbulence");
+		var frames = 0;
+		var rad = Math.PI / 180;
+
+		function freqAnimation() {
+			bfx = 0.005;
+			bfy = 0.005;
+			frames += .2
+			bfx += 0.0025 * Math.cos(frames * rad);
+			bfy += 0.0025 * Math.sin(frames * rad);
+
+			bf = bfx.toString() + ' ' + bfy.toString();
+			filter.setAttributeNS(null, 'baseFrequency', bf);
+			window.requestAnimationFrame(freqAnimation);
+		}
+
+		window.requestAnimationFrame(freqAnimation);
+
+
 	</script>
 </body>
 
 </html>
-
-
-
-
-
-

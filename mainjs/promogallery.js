@@ -7,9 +7,9 @@ $(document).ready(function() {
             $(this).css('animation-delay', 400+(index*300)+'ms')
         })
 
-        $('.promoGallery li>div>a').each(function(index) {
-            $(this).css('background', 'url(./images/media_'+(index+1)+'.webp)').css('background-size', 'cover')
-        })
+        // $('.promoGallery li>div>a').each(function(index) {
+        //     $(this).css('background', 'url(./images/media_'+(index+1)+'.webp)').css('background-size', 'cover')
+        // })
 
 
         
