@@ -1,7 +1,6 @@
 html{scroll-behavior:smooth;}
 
 .main {
-    background: url(../images/sub4_main.webp);
     width: 100vw;
     height: 500px;
     position: relative;
